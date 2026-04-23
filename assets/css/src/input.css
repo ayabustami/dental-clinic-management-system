@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@utility col{
+    @apply flex flex-col;
+}
+@theme{
+    --font-manrope:'Manrope';
+    --font-inter:'Inter';
+}
