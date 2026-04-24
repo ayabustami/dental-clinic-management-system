@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/css/src/output.css" rel="stylesheet">
+    <link rel="icon" href="./assets/imgs/appIcon.svg" type="image/svg+xml">
+
     <title>Login - Denti Clinics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,36 +15,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body class="flex items-center justify-center min-h-screen bg-[#faf9f6] ">
+<body class="flex-center min-h-screen bg-bgPrimary ">
 
-<div class="col bg-white lg:w-125  lg:h-[667.15px] lg:gap-12 lg:rounded-xl lg:border-[6px] border-[#f5f4f1] shadow-sm lg:p-[64px]  md:w-[426px] md:h-[598px] md:gap-2.5 md:p-[41px] md:lg:rounded-2xl  max-sm:w-[342px] max-sm:min-h-[566px] max-sm:gap-8 max-sm:p-[33px] max-sm:justify-center   sm:w-[342px] sm:min-h-[566px] sm:gap-8 sm:p-[33px] sm:justify-center ">
+<div class="col bg-white lg:w-125  lg:h-166.7 lg:gap-12 lg:rounded-xl lg:border-[6px] border-card shadow-sm lg:p-16  md:w-106.5 md:h-149.5 md:gap-2.5 md:p-10.25 md:lg:rounded-2xl  max-sm:w-85.5 max-sm:min-h-141.5 max-sm:gap-8 max-sm:p-8.25 max-sm:justify-center   sm:w-85.5 sm:min-h-141.5 sm:gap-8 sm:p-8.25 sm:justify-center ">
 
     <div class="col items-center gap-2  text-center">
-        <div class=" bg-[#002147] rounded-2xl   mb-4"><img class=" m-[26px]  w-[27px] h-[27.05px]" src="./assets/imgs/Container.svg" alt="Denti Clinics Logo"></div>
-        <h1 class="text-[#000A1E] max-sm:text-[25px] sm:text-[25px] md:text-[30px] font-manrope font-extrabold">Denti Clinics</h1>
-        <p class="text-[12px] sm:text-[8px] max-sm:text-[8px] text-[#5A6375] font-inter font-medium">DOCTOR PORTAL ACCESS</p>
+        <div class=" bg-primary rounded-2xl  mb-4"><img class=" m-6.5  w-6.75 h-6.75" src="./assets/imgs/loginIcon.svg" alt="Denti Clinics Logo"></div>
+        <h1 class="text-textPrimary text-[25px] md:text-[30px] font-manrope font-extrabold">Denti Clinics</h1>
+        <p class=" text-[8px] md:text-[12px] text-textMuted font-inter font-medium">DOCTOR PORTAL ACCESS</p>
     </div>
 
     <form class="col gap-6  ">
         
         <div class="col gap-1">
-            <label class="text-[12px] text-[#000A1E] uppercase  font-inter font-semibold" for="email">Email</label>
-            <input class=" border-b border-[#000A1E] px-0 py-2.5 text-sm text-[#000A1E] outline-none placeholder:text-[#C4C6CF]"
+            <label class="input-label" for="email">Email</label>
+            <input class=" input-field"
                 id="email" type="text" placeholder="username@denti.com">
         </div>
 
         <div class="col gap-1">
-            <div class="flex justify-between items-center">
-                <label class="text-[12px]   text-[#000A1E] uppercase  font-inter font-semibold" for="password">Password</label>
-                <a href="#" class="text-[10px] text-[#708AB5] uppercase font-inter font-semibold ">Forgot?</a>
+            <div class="flex-between">
+                <label class="input-label" for="password">Password</label>
+                <a href="#" class="text-[10px] text-forgot uppercase font-inter font-semibold ">Forgot?</a>
             </div>
-            <input class=" border-b border-[#000A1E] px-0 py-2.5 text-sm text-[#000A1E] outline-none   placeholder:text-[#C4C6CF]"
+            <input class=" input-field"
                 id="password" type="password" placeholder="••••••••">
         </div>
 
-        <button class="lg:mt-10 md:mt-8 w-full  py-4  lg:px-[161.5px] md:px-[150.61px] bg-[#002147] text-white font-inter font-semibold cursor-pointer text-[14px] uppercase rounded-lg "
+        <button class="btn-primary " 
                 type="submit">Login</button>
-        <p class="text-center font-inter font-medium text-[#5A6375] text-[10px]" > SECURE ENCRYPTED CLINICAL GATEWAY</p>
+        <p class="text-center font-inter font-medium text-textMuted text-[10px]" > SECURE ENCRYPTED CLINICAL GATEWAY</p>
     </form>
 
 </div>

@@ -1,9 +1,41 @@
 @import "tailwindcss";
 
+
+@theme{
+    --color-primary: #002147;
+    --color-textPrimary: #000A1E;
+    --color-textMuted: #5A6375;
+    --color-forgot: #708AB5;
+    --color-border: #000A1E;
+    --color-bgPrimary: #faf9f6;
+    --color-card: #f5f4f1;
+    --color-placeholder: #C4C6CF;
+    --color-menuMuted:#747572;
+    --color-greyheader:#44474;
+    --font-manrope:'Manrope';
+    --font-inter:'Inter';
+}
 @utility col{
     @apply flex flex-col;
 }
-@theme{
-    --font-manrope:'Manrope';
-    --font-inter:'Inter';
+@utility row{
+    @apply flex flex-row  items-center;
+}
+@utility input-field {
+    @apply border-b border-textPrimary px-0 py-2.5 text-sm text-textPrimary outline-none placeholder:text-placeholder font-inter;
+}
+
+
+@utility input-label {
+    @apply text-[12px] text-textPrimary uppercase font-inter font-semibold;
+}
+
+@utility btn-primary {
+    @apply w-full py-4 bg-primary text-white font-inter font-semibold cursor-pointer text-[14px] uppercase rounded-lg;
+}
+@utility flex-center {
+    @apply flex items-center justify-center;
+}
+@utility flex-between {
+    @apply flex items-center justify-between;
 }
