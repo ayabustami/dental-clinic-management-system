@@ -11,20 +11,43 @@
     --color-card: #f5f4f1;
     --color-placeholder: #C4C6CF;
     --color-menuMuted:#747572;
-    --color-greyheader:#44474;
+    --color-greyheader:#44474E;
+    --color-labelMuted:#44474D;
+
     --font-manrope:'Manrope';
     --font-inter:'Inter';
+}
+@utility status-container{
+    @apply    rounded-2xl;
+}
+@utility card{
+    @apply rounded-2xl p-8  lg:w-[287.67px] lg:h-45 md:w-49.25 md:h-40.75  col;
+}
+@utility patient-card{
+    @apply rounded-2xl gap-[15.23px] lg:w-[207.75px] lg:h-[319.69px] md:w-37.5 md:h-50 col bg-bgPrimary;
+
+}
+@utility flex-between{
+    @apply flex items-center justify-between;
 }
 @utility col{
     @apply flex flex-col;
 }
+@utility row-center{
+    @apply flex flex-row  items-center ;
+}
 @utility row{
-    @apply flex flex-row  items-center;
+    @apply flex flex-row   ;
+}
+@utility row-between{
+    @apply flex flex-row  items-center justify-between  ;
 }
 @utility input-field {
-    @apply border-b border-textPrimary px-0 py-2.5 text-sm text-textPrimary outline-none placeholder:text-placeholder font-inter;
+    @apply  border-textPrimary px-0 py-2.5 text-sm text-textPrimary outline-none placeholder:text-placeholder font-inter;
 }
-
+@utility rectangle-card {
+    @apply lg:h-24 md:h-20 rounded-2xl shadow-2xs;
+}
 
 @utility input-label {
     @apply text-[12px] text-textPrimary uppercase font-inter font-semibold;
@@ -38,4 +61,33 @@
 }
 @utility flex-between {
     @apply flex items-center justify-between;
+}
+@utility layout-settings {
+    @apply  grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "navbar"
+    "main"
+    "sidebar";
+    md:grid-template-areas:
+        "navbar navbar"
+        "sidebar main";
+        lg:  grid-template-areas:
+            "navbar navbar"
+            "sidebar main"
+            "sidebar main";
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.navbar {
+        grid-area: navbar;
+
+}
+
+.main {
+    grid-area: main;
 }
