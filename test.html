@@ -14,22 +14,204 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="grid min-h-screen grid-cols-1 md:grid-cols-[260px_1fr]">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/src/output.css" rel="stylesheet">
+    <link rel="icon" href="./assets/imgs/appIcon.svg" type="image/svg+xml">
+    <title>Dashboard - Denti Clinics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="flex lg:container lg:mx-auto lg:min-h-screen  bg-bgPrimary">
 
-    <!-- Navbar -->
-    <header class="col-span-1 md:col-span-2 bg-amber-700">
-        Navbar
+<div class="layout">
+    <header class="navbar md:row md:justify-between lg:gap-[193.66px] md:gap-[66.64px] md:px-8 lg:px-[48.05px] lg:pt-[12.18px] md:h-16 lg:border-b-0 md:border-b md:border-gray-300">
+        <div class="searchbar md:border lg:border-0 md:min-w-87.5 md:h-8.25 md:rounded-2xl md:border-gray-300">
+            <form class="md:row md:border-gray-400 lg:border-b   md:h-8.25 lg:w-[447.21px] lg:h-[35.77px] md:pl-4 md:gap-3.75">
+                <img class="lg:w-[16.38px] lg:h-[16.38px] md:w-[9.56px] md:h-[9.56px]" src="./assets/imgs/searchIcon.svg" alt="Search Icon">
+                <label for="search" class="hidden">Search</label>
+                <input type="text" id="search" class="block lg:text-[14px] md:text-[12px] font-inter placeholder:text-greyPlaceholder" placeholder="Search patients, records..." />
+            </form>
+        </div>
+        <div class="row md:gap-8 lg:gap-16">
+            <div class="headerIcons  md:gap-4 row lg:gap-6">
+                <a href="#" class="alertIcon">
+                    <img class="lg:w-4.5 lg:h-4.5" src="./assets/imgs/alertIcon.svg" alt="Alert Icon">
+                </a>
+                <a href="#" class="infoIcon">
+                    <img class="lg:w-4.5 lg:h-4.5 lg:rounded-full" src="./assets/imgs/infoIcon.svg" alt="Info Icon">
+                </a>
+            </div>
+            <div class="row md:gap-3 lg:gap-6 ">
+                <div class="profileInfo col md:items-end lg:gap-1">
+                    <span class="lg:text-[12px] md:text-[12px] font-manrope font-bold text-textPrimary">Dr. Shireen</span>
+                    <span class="lg:text-[10px] md:text-[8px] font-inter text-textMuted">Specialist Orthodontist</span>
+                </div>
+                <div class="profile lg:row lg:items-center lg:gap-2">
+                    <img class="md:w-8 md:h-8 lg:h-10 lg:w-10 md:rounded-full" src="./assets/imgs/profileIcon.svg" alt="Profile Icon">
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- Sidebar -->
-<aside class="fixed bottom-0 w-full md:static md:block">        Sidebar
+    <aside class="left-sidebar md:col lg:w-64 md:w-16 lg:min-h-screen md:bg-textPrimary lg:bg-bgPrimary md:items-center md:pt-6 lg:pt-8 ">
+        <div class="lg:row lg:items-center lg:gap-3 lg:mb-12 md:mb-8">
+            <div class="lg:bg-primary lg:w-14.75 lg:h-15.5 lg:rounded-2xl lg:p-3">
+                <img class="lg:w-8.5 lg:h-8.75" src="./assets/imgs/LogoIcon.svg" alt="Logo">
+            </div>
+            <div class="md:hidden lg:col">
+                <h1 class="lg:text-[20px] lg:font-manrope lg:font-bold lg:text-primary lg:py-2.5">Denti Clinics</h1>
+                <p class="lg:text-[10px] lg:font-inter lg:font-medium lg:text-greyheader lg:uppercase lg:px-2 lg:tracking-[2px]">Doctor Portal</p>
+            </div>
+        </div>
+
+        <nav class="md:col md:gap-6 lg:gap-3  lg:w-full">
+            <a href="#" class="lg:row lg:gap-4 lg:border-l-4 lg:border-primary lg:px-4 lg:h-11">
+                <img class="lg:w-5 lg:h-5 md:invert md:brightness-0 lg:invert-0 lg:brightness-100" src="./assets/imgs/dashboardIcon.svg" alt="Dashboard Icon">
+                <span class="lg:text-[14px] lg:font-manrope lg:font-bold lg:text-primary md:hidden lg:block ">Dashboard</span>
+            </a>
+            <a href="#" class="lg:row lg:gap-4 lg:pl-5 lg:h-11">
+                <img class="lg:w-5 lg:h-5 md:invert md:brightness-0 lg:invert-0 lg:brightness-100" src="./assets/imgs/scheduleIcon.svg" alt="Schedule Icon">
+                <span class="lg:text-[14px] lg:font-manrope lg:font-medium lg:text-menuMuted md:hidden lg:block">Schedule</span>
+            </a>
+            <a href="#" class="lg:row lg:gap-4 lg:pl-5 lg:h-11">
+                <img class="lg:w-5 lg:h-5 md:invert md:brightness-0 lg:invert-0 lg:brightness-100" src="./assets/imgs/patientsIcon.svg" alt="Patients Icon">
+                <span class="lg:text-[14px] lg:font-manrope lg:font-medium lg:text-menuMuted md:hidden lg:block">Patients</span>
+            </a>
+            <a href="#" class="lg:row lg:gap-4 lg:pl-5 lg:h-11">
+                <img class="lg:w-5 lg:h-5 md:invert md:brightness-0 lg:invert-0 lg:brightness-100" src="./assets/imgs/settingsIcon.svg" alt="Settings Icon">
+                <span class="lg:text-[14px] lg:font-manrope lg:font-medium lg:text-menuMuted md:hidden lg:block">Settings</span>
+            </a>
+        </nav>
     </aside>
 
-    <!-- Main -->
-    <main class="col-span-1 bg-amber-400">
-        Main Content
-    </main>
+    <main class="main-content pb-15">
+        <section>
+            <div class="lg:py-8 md:p-8">
+                <h2 class="md:text-[30px] lg:text-[48px] font-manrope font-extrabold text-textPrimary">Good morning, Dr. Shireen</h2>
+                <p class="md:text-[14px] lg:text-[18px] font-inter text-greyheader">Your precision is the foundation of every smile today.</p>
+            </div>
+            <div class="cards lg:w-231.75 lg:ml-0 lg:pr-15 w-full max-w-7xl mx-auto md:grid md:grid-cols-3 md:gap-6 md:p-8 lg:mt-8">
 
+                <div class="card md:bg-white">
+                    <div class="md:flex-between">
+                        <h3 class="md:font-manrope  md:text-[10px] lg:text-[12px] md:font-bold md:text-greyheader/60 md:tracking-[1.2px]">DAILY CAPACITY</h3>
+                        <img src="./assets/imgs/dailyCapacityIcon.svg" alt="Capacity icon">
+                    </div>
+                    <span class=" md:text-[40px] lg:text-[60px] md:font-manrope md:font-extrabold md:text-textPrimary">08</span>
+                    <span class="md:font-inter md:text-[12px] lg:text-[14px] md:text-greyheader">Appointments Today</span>
+                </div>
+                <div class="card md:bg-card">
+                    <div class="md:flex-between">
+                        <h3 class="md:font-manrope  md:text-[10px] lg:text-[12px] md:font-bold md:text-greyheader/60 md:tracking-[1.2px]">CRITICAL FOCUS</h3>
+                        <img src="./assets/imgs/criticalIcon.svg" alt="Critical icon">
+                    </div>
+                    <span class="md:text-[40px] lg:text-[60px] md:font-manrope md:font-extrabold md:text-textPrimary">02</span>
+                    <span class="md:font-inter md:text-[12px] lg:text-[14px] md:text-greyheader">Emergency Cases</span>
+                </div>
+                <div class="card md:bg-primary">
+                    <div class="md:flex-between">
+                        <h3 class="md:font-manrope md:text-[10px] lg:text-[12px] md:font-bold md:text-white/60 md:tracking-[1.2px]">GROWTH INDEX</h3>
+                        <img src="./assets/imgs/gowthindexIcon.svg" alt="growth icon">
+                    </div>
+                    <div class="md:row md:items-end">
+                        <span class="md:text-[40px] lg:text-[60px] md:font-manrope md:font-extrabold md:text-white">94</span>
+                        <span class="md:text-[20px] lg:text-[24px] md:font-manrope lg:mb-3 md:font-medium md:rotate-[0.21deg] md:text-white">%</span>
+                    </div>
+                    <span class="md:font-inter md:text-[12px] lg:text-[14px] md:text-white/80">Patient Satisfaction</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="md:row-between md:pt-16 md:pb-8 md:pl-8">
+                <h3 class="md:text-2xl font-manrope text-textPrimary md:font-semibold lg:font-bold">Today's Schedule</h3>
+                <a href="#" class="lg:underline lg:decoration-[#AEC7F6] lg:decoration-1 lg:underline-offset-3 lg:text-[14px] font-inter lg:leading-5 lg:font-semibold text-textPrimary pr-15">View full calendar</a>
+            </div>
+            <div class="col md:gap-3.5 px-8">
+                <div class="rectangle-card md:row col bg-white md:gap-20 lg:gap-18 lg:py-7 lg:pl-6 md:pl-5 lg:border-0 border-l-5">
+                    <span class="font-manrope text-[14px] font-bold text-primary">10:00 AM</span>
+                    <div class="row-between lg:w-[85%] md:w-[65%] lg:pr-18.5">
+                        <div class="col">
+                            <h5 class="font-manrope lg:text-[18px] text-[16px] font-bold text-textPrimary">Sarah Chen</h5>
+                            <p class="font-inter lg:text-[14px] text-[12px] text-greyheader">Root Canal Therapy · Room 3</p>
+                        </div>
+                        <div class="bg-[#D7E0F5] status-container">
+                            <p class="font-inter text-[10px] md:py-1 md:px-3 leading-4 lg:py-1.5 lg:px-4 tracking-[1px] font-semibold text-textMuted">RESTORATIVE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rectangle-card md:row col bg-[#f4f3f1] md:gap-20 lg:gap-18 lg:py-7 lg:pl-6 lg:border-0 border-l-5 md:pl-5 border-[#DAE3F7]">
+                    <span class="font-manrope text-[12px] md:text-[14px] font-bold text-primary">11:30 AM</span>
+                    <div class="row-between lg:w-[85%] md:w-[65%] lg:pr-18.5">
+                        <div class="col">
+                            <h5 class="font-manrope lg:text-[18px] text-[16px] font-bold text-textPrimary">Marcus Thorne</h5>
+                            <p class="font-inter lg:text-[14px] text-[12px] text-greyheader">Dental Implants Consultation · Room 1</p>
+                        </div>
+                        <div class="bg-[#D6E3FF] status-container">
+                            <p class="font-inter md:text-[10px] leading-4 lg:py-1.5 lg:px-4 md:py-1 md:px-3 tracking-[1px] font-semibold text-[#2D476F]">SURGICAL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rectangle-card row bg-white md:gap-20 lg:gap-18 lg:py-7 lg:pl-6 lg:border-0 border-l-5 md:pl-5 border-[#8B0000]">
+                    <span class="font-manrope text-[14px] font-bold text-primary">12:15 AM</span>
+                    <div class="row-between lg:w-[85%] md:w-[65%] lg:pr-18.5">
+                        <div class="md:col">
+                            <h5 class="font-manrope lg:text-[18px] text-[16px] font-bold text-textPrimary">Elena Rodriguez</h5>
+                            <p class="font-inter lg:text-[14px] text-[12px] text-greyheader">Professional Whitening · Suite B</p>
+                        </div>
+                        <div class="bg-[#FFDBCB] status-container">
+                            <p class="font-inter text-[10px] leading-4 lg:py-1.5 lg:px-4 md:py-1 md:px-3 tracking-[1px] font-semibold text-[#6C391D]">COSMETIC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:pt-16 md:pt-5.5 md:px-8">
+            <h3 class="font-manrope md:font-semibold lg:font-bold md:text-2xl text-textPrimary lg:pb-[28.5px] md:pb-6">Recent Patients</h3>
+            <div class="row md:gap-4 lg:gap-[30.8px]">
+                <div class="patient-card">
+                    <img class="lg:w-[207.75px] lg:h-[259.69px] md:w-37.5 md:h-50 md:rounded-2xl" src="./assets/imgs/patientsCollection/patient1.webp" alt="Patient 1">
+                    <div class="md:col lg:gap-[3.4px]">
+                        <h4 class="font-manrope lg:font-bold lg:text-[16px] md:text-[14px] md:font-semibold lg:text-textPrimary md:text-center lg:text-left">Sarah Chen</h4>
+                        <p class="font-inter lg:text-[12px] text-greyheader md:hidden lg:block">Last Visit: 2 days ago</p>
+                    </div>
+                </div>
+                <div class="patient-card">
+                    <img class="lg:w-[207.75px] lg:h-[259.69px] md:w-37.5 md:h-50 md:rounded-2xl" src="./assets/imgs/patientsCollection/patient2.webp" alt="Patient 2">
+                    <div class="md:col lg:gap-[3.4px]">
+                        <h4 class="font-manrope lg:font-bold lg:text-[16px] md:text-[14px] md:font-semibold lg:text-textPrimary md:text-center lg:text-left">Marcus Thorne</h4>
+                        <p class="font-inter lg:text-[12px] text-greyheader md:hidden lg:block">Last Visit: 1 week ago</p>
+                    </div>
+                </div>
+                <div class="patient-card">
+                    <img class="lg:w-[207.75px] lg:h-[259.69px] md:w-37.5 md:h-50 md:rounded-2xl" src="./assets/imgs/patientsCollection/patient3.webp" alt="Patient 3">
+                    <div class="md:col lg:gap-[3.4px]">
+                        <h4 class="font-manrope lg:font-bold lg:text-[16px] md:text-[14px] md:font-semibold lg:text-textPrimary md:text-center lg:text-left">Elena Rodriguez</h4>
+                        <p class="font-inter lg:text-[12px] text-greyheader md:hidden lg:block " >Last Visit: 3 days ago</p>
+                    </div>
+                </div>
+                <div class=" md:col md:rounded-2xl bg-[#e3e2e0] md:w-37.5 md:h-47 lg:w-[207.75px] lg:h-[259.69px] items-center justify-center md:mb-5 lg:mb-15">
+                    <a href="" class="md:flex-center md:col">
+                        <img class="md:w-6.75 md:h-6.75 md:rounded-2xl" src="./assets/imgs/addIcon.svg" alt="Add Icon">
+                        <p class="font-bold font-manrope md:text-[12px] lg:text-[14px] md:text-primary">Add New Record</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 </div>
+
+ 
+
+ 
 </body>
 </html>
