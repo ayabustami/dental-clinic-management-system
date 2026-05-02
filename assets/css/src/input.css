@@ -22,19 +22,7 @@
 body{
     background-color: var(--color-bgPrimary) ;
 }
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    grid-column: span 2 / span 2;
-    height: 64px; 
-    padding-left: 24px; 
-    padding-right: 24px;
-    padding-top: 15.5px;  
-    padding-bottom: 15.5px;
-    border-bottom: 1px solid #D1D5DB; 
-}
+
 }
 @utility header{
     @apply md:col-span-2 md:py-[17.5px];
@@ -81,39 +69,7 @@ body{
 @utility flex-center {
     @apply flex items-center justify-center;
 }
-@utility flex-between {
-    @apply flex items-center justify-between;
-}
-@utility layout-settings {
-    @apply  grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "navbar"
-    "main"
-    "sidebar";
-    md:grid-template-areas:
-        "navbar navbar"
-        "sidebar main";
-        lg:  grid-template-areas:
-            "navbar navbar"
-            "sidebar main"
-            "sidebar main";
-}
-
-
-.sidebar {
-    grid-area: sidebar;
-}
-
-.navbar {
-        grid-area: navbar;
-
-}
-
-.main {
-    grid-area: main;
-}
-
+ 
 
 /*  layout & nav style*/
 

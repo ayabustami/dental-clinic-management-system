@@ -682,11 +682,6 @@
     align-items: center;
     justify-content: space-between;
   }
-  .flex-between {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   .flex-center {
     display: flex;
     align-items: center;
@@ -1353,13 +1348,6 @@
     @media (width >= 48rem) {
       display: flex;
       flex-direction: row;
-    }
-  }
-  .md\:flex-between {
-    @media (width >= 48rem) {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
     }
   }
   .md\:flex-between {
@@ -2436,28 +2424,6 @@
   body {
     background-color: var(--color-bgPrimary);
   }
-  .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    grid-column: span 2 / span 2;
-    height: 64px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 15.5px;
-    padding-bottom: 15.5px;
-    border-bottom: 1px solid #D1D5DB;
-  }
-}
-.sidebar {
-  grid-area: sidebar;
-}
-.navbar {
-  grid-area: navbar;
-}
-.main {
-  grid-area: main;
 }
 @property --tw-duration {
   syntax: "*";
