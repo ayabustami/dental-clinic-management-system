@@ -79,78 +79,78 @@
     <main class=" col-span-1  px-6 md:px-10 lg:px-11 py-4 pb-50 bg-bgPrimary 2xl:pr-57.25">
         <h2 class="font-manrope font-bold text-[30px] md:text-[36px] lg:text-[40px] text-textPrimary">Settings</h2>
         <p class="font-inter text-[14px] md:text-[16px] text-greyheader mt-2">Manage your clinic preferences, security protocols, and operational hours.</p>
-        <section class="px-6 md:px-8 lg:pr-10   my-10  bg-white shadow-sm rounded-xl" >   
+        <section class="settings-section" >   
             <div class="row mt-8 gap-3 py-6 border-b border-gray-200 py-4">
-                <div class="w-8 h-8.5 bg-[#F4F3F1] flex justify-center items-center rounded-xl">
+                <div class="icon-settingsMain">
                     <img src="./assets/imgs/settings-icons/AlertIcon.svg" alt="Edit Icon" class="w-4 h-4">
                 </div>
-                <h3 class="font-manrope font-bold text-[18px] md:text-[20px] lg:text-[24px] flex justify-center items-center text-textPrimary  ">Notifications</h3>
+                <h3 class="sectionTitle-settingsMain text-textPrimary  ">Notifications</h3>
             </div>
             
                 <div class="row-between pt-6 ">
                     <div class="col gap-0.5 p-4 ">
-                        <h4 class="text-[14px] lg:text-[16px] font-bold font-inter text-textPrimary">Emergency Alerts</h4>
-                        <p class="text-[12px] lg:text-[14px] font-inter text-greyheader ">Instant mobile push for critical patient status</p>
+                        <h4 class="toggle-title">Emergency Alerts</h4>
+                        <p class="toggle-caption ">Instant mobile push for critical patient status</p>
                     </div>
                     <div>
-                        <button type="button" role="switch" aria-checked="true" aria-label="Toggle emergency alerts" id="toggleBtn1" class="w-14 h-8 bg-textPrimary rounded-full relative transition duration-300 hover:opacity-80 hover:scale-105">
-                            <span id="circle1" class="absolute right-1 top-1 w-6 h-6 bg-white rounded-full transition duration-300"></span>
+                        <button type="button" role="switch" aria-checked="true"  id="toggleBtn1" class=" bg-textPrimary toggle-btn">
+                            <span id="circle1" class=" right-1  toggle-circle"></span>
                         </button>
                     </div>
                 </div>
                 <div class="row-between ">
                     <div class="col gap-0.5 p-4">
-                        <h4 class="text-[14px] lg:text-[16px] font-bold font-inter text-textPrimary">Daily Schedule Summary</h4>
-                        <p class="text-[12px] lg:text-[14px] font-inter text-greyheader">Morning email with booked appointments</p>
+                        <h4 class="toggle-title">Daily Schedule Summary</h4>
+                        <p class="toggle-caption">Morning email with booked appointments</p>
                     </div>
                     <div>
-                        <button type="button" role="switch" aria-checked="false" aria-label="Toggle daily schedule summary" id="toggleBtn2" class="w-14 h-8 bg-placeholder rounded-full relative transition duration-300 hover:opacity-80 hover:scale-105">
-                            <span id="circle2" class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full transition duration-300"></span>
+                        <button type="button" role="switch" aria-checked="false"  id="toggleBtn2" class=" bg-placeholder toggle-btn">
+                            <span id="circle2" class="left-1 toggle-circle"></span>
                         </button>
                     </div>
                 </div>
                 <div class="row-between pb-6">
                     <div class="col gap-0.5 p-4">
-                        <h4 class="text-[14px] lg:text-[16px] font-bold font-inter text-textPrimary">Lab Results Ready</h4>
-                        <p class="text-[12px] lg:text-[14px] font-inter text-greyheader">Push notifications for uploaded lab results</p>
+                        <h4 class="toggle-title">Lab Results Ready</h4>
+                        <p class="toggle-caption">Push notifications for uploaded lab results</p>
                     </div>
                     <div>
-                        <button type="button" role="switch" aria-checked="true" aria-label="Toggle lab results notifications" id="toggleBtn3" class="w-14 h-8 bg-textPrimary rounded-full relative transition duration-300 hover:opacity-80 hover:scale-105">
-                            <span id="circle3" class="absolute right-1 top-1 w-6 h-6 bg-white rounded-full transition duration-300"></span>
+                        <button type="button" role="switch" aria-checked="true"  id="toggleBtn3" class="bg-textPrimary toggle-btn">
+                            <span id="circle3" class="right-1  toggle-circle"></span>
                         </button>
                     </div>
                 </div>
         </section>
-        <section class="px-6 md:px-8 lg:pr-10  pb-6 my-10  bg-white shadow-sm rounded-xl" >
+        <section class="settings-section" >
             <div class="row mt-8 gap-3 py-6  border-b border-gray-200 pb-3   ">
-                <div class="w-8 h-8.5 bg-[#F4F3F1] flex justify-center items-center rounded-xl">
+                <div class="icon-settingsMain">
                     <img src="./assets/imgs/settings-icons/clinicsHourIcon.svg" alt="clinicsHourIcon" class="w-4 h-4">
                 </div>
-                <h3 class="font-manrope font-bold text-[18px] md:text-[20px] lg:text-[24px] flex justify-center items-center">Clinic Hours</h3>
+                <h3 class="sectionTitle-settingsMain">Clinic Hours</h3>
             </div>
             <div class="col gap-4 py-6">
-                <div class="bg-[#f4f3f1] px-6 row-between p-3.25 rounded-xl">
-                    <p class="font-inter text-[12px] md:text-[16px] text-textPrimary">Mon-Fri</p>
+                <div class="bg-[#f4f3f1] hours-row ">
+                    <p class="hours-text">Mon-Fri</p>
                     <div class="row gap-3 justify-center items-center"> 
-                        <p class="font-inter text-[12px] md:text-[16px] text-textPrimary">08:00 AM — 06:00 PM</p>
+                        <p class="hours-text">08:00 AM — 06:00 PM</p>
                         <a class="block transition hover:opacity-70 hover:scale-105">
                             <img src="assets/imgs/settings-icons/editIcon.svg" alt="edit " class="w-4 h-4 flex "> 
                         </a>
                     </div>
 
                 </div>
-                <div class="bg-[#f4f3f1] px-6 row-between p-3.25 rounded-xl">
-                    <p class="font-inter text-[12px] md:text-[16px] text-textPrimary">Saturday</p>
+                <div class="bg-[#f4f3f1] hours-row ">
+                    <p class="hours-text">Saturday</p>
                     <div class="row gap-3 justify-center items-center"> 
-                        <p class="font-inter text-[12px] md:text-[16px] text-textPrimary">09:00 AM — 02:00 PM</p>
+                        <p class="hours-text">09:00 AM — 02:00 PM</p>
                         <a class="block transition hover:opacity-70 hover:scale-105">
                             <img src="assets/imgs/settings-icons/editIcon.svg" alt="edit " class="w-4 h-4 flex "> 
                         </a>
                     </div>
 
                 </div>
-                <div class="bg-[#FFDAD6]/30 px-6 row-between p-3.25 rounded-xl">
-                    <p class="font-inter text-[12px] md:text-[16px] text-textPrimary">Sunday</p>
+                <div class="bg-[#FFDAD6]/30 hours-row ">
+                    <p class="hours-text">Sunday</p>
                     <div class="row gap-3 justify-center items-center"> 
                         <p class="font-inter text-[12px] text-red-700 uppercase md:text-[16px] ">Closed</p>
                         <a class="block transition hover:opacity-70 hover:scale-105">
@@ -163,24 +163,24 @@
                 
             </div>
         </section>
-        <section class="px-6 md:px-8 lg:pr-10  pb-6 my-10  bg-white shadow-sm rounded-xl" >
-            <div class="row mt-8 gap-3 py-6 border-b border-gray-200 pb-3">
-                <div class="w-8 h-8.5 bg-[#F4F3F1] flex justify-center items-center rounded-xl">
+        <section class="settings-section " >
+            <div class="sectionHeader-settingsMain">
+                <div class="icon-settingsMain">
                     <img src="./assets/imgs/settings-icons/securityIcon.svg" alt="securityIcone" class="w-4 h-4">
                 </div>
-                <h3 class="font-manrope font-bold text-[18px] md:text-[20px] lg:text-[24px] flex justify-center items-center">Security</h3>
+                <h3 class="sectionTitle-settingsMain">Security</h3>
             </div>
             <div class="col md:row gap-6 py-6">
                 <div class="col flex-1 gap-3 min-w-0 f">
-                    <label class="font-inter text-[14px] md:text-[16px] text-labelMuted" for="password">Change Password</label>
-                    <div class="row-between bg-[#F4F3F1] px-6 py-3 rounded-lg ">
-                        <input class="min-w-0 font-inter text-[14px] md:text-[16px]" id="password" type="password" placeholder="********">
+                    <label class="settings-label" for="password">Change Password</label>
+                    <div class="settings-field-box ">
+                        <input class="settings-input" id="password" type="password" placeholder="********">
                         <button type="button" class=" shrink- font-inter text-primary hover:opacity-70 transition text-[12px] md:text-[14px]">Update</button>
                     </div>
                 </div>
                 <div class="col flex-1 gap-3">
-                    <label class="font-inter text-[14px] md:text-[16px] text-labelMuted " for="Status">2FA Status</label>
-                    <div class="row gap-2 stroke-[#4A6459]/20 bg-[#C9E6D8]/30   py-3 pl-3 rounded-lg ">
+                    <label class="settings-label " for="Status">2FA Status</label>
+                    <div class="row gap-2 stroke-[#4A6459]/20 bg-[#C9E6D8]/30   py-3  rounded-lg pl-3">
                         <img  src="assets/imgs/settings-icons/successIcon.svg" class="" alt="success">
                         <p class="text-[12px] md:text-[14px] font-inter text-[#4A6459]">Two-Factor Enabled</p>
                     </div>
@@ -188,25 +188,25 @@
 
             </div>
         </section>  
-        <section class="px-6 md:px-8 lg:pr-10  md:pb-6 my-10  bg-white shadow-sm rounded-xl pb-6.5" >
-            <div class="row mt-8 gap-3 py-6 border-b border-gray-200 pb-3 ">
-                <div class="w-8 h-8.5 bg-[#F4F3F1] flex justify-center items-center rounded-xl">
+        <section class="settings-section pb-6.5 md:pb-6" >
+            <div class="sectionHeader-settingsMain ">
+                <div class="icon-settingsMain">
                     <img src="./assets/imgs/settings-icons/securityIcon.svg" alt="securityIcone" class="w-4 h-4">
                 </div>
-                <h3 class="font-manrope font-bold text-[18px] md:text-[20px] lg:text-[24px] flex justify-center items-center">Personalization</h3>
+                <h3 class="sectionTitle-settingsMain">Personalization</h3>
             </div>
             <div class="col md:row gap-6 py-6">
                 <div class="col flex-1 gap-3">
-                    <label class="font-inter text-[14px] md:text-[16px] text-labelMuted" for="checkbox">Language</label>
-                        <div class="row-between bg-[#F4F3F1] px-6 py-3 rounded-lg ">
-                            <input class="min-w-0 font-inter text-[14px] md:text-[16px]" id="checkbox" type=" checkbox" placeholder="English (United States)">
+                    <label class="settings-label" for="checkbox">Language</label>
+                        <div class="settings-field-box ">
+                            <input class="settings-input" id="checkbox" type=" checkbox" placeholder="English (United States)">
                             <a class="block transition hover:opacity-70 hover:scale-105">
                                 <img src="./assets/imgs/settings-icons/buttonArrow.svg"  alt="buttonArrow" class="w-4 h-4">
                             </a>
                         </div>
                 </div>
                 <div class="col flex-1 gap-3">
-                    <label class="font-inter text-[14px] md:text-[16px] text-labelMuted" for="checkbox">Theme Selection</label>
+                    <label class="settings-label" for="checkbox">Theme Selection</label>
                         <div class="row-between bg-[#F4F3F1] px-1 py-1 rounded-lg ">
                             <div class="row-between min-w-0  w-full gap-4 ">
                                 <label class="flex-1 cursor-pointer transition hover:opacity-80">
