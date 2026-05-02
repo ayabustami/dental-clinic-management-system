@@ -161,7 +161,7 @@ body{
     @apply font-manrope md:text-[14px] font-medium text-[#64748B] lg:flex md:hidden text-[10px];
 }
 
-@utility nav-label-unselected {
+@utility nav-label-selected {
     @apply font-manrope lg:text-[14px] md:text-[10px] font-bold lg:font-medium text-primary text-[10px];
 }
 
