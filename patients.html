@@ -73,7 +73,50 @@
             </nav>
         </aside>
 
-    <main>
+    <main class="col-span-1 px-6 md:px-10 lg:px-11 py-4 pb-50 bg-bgPrimary 2xl:pr-57.25">
+    
+    <!-- main Header -->
+        <div class="row-between flex-wrap gap-4">
+            <div class="col gap-1">
+                <h2 class="font-manrope font-bold text-[30px] md:text-[36px] lg:text-[40px] text-textPrimary">Patient Registry</h2>
+                <p class="font-inter text-[14px] md:text-[16px] text-greyheader mt-2">View and manage all your registered patients in one place.</p>
+            </div>
+            <div class="row gap-3 items-center">
+                <button class="btn-secondary border border-gray-200 text-textPrimary bg-[#E9E8E5]">
+                    Advanced Filters
+                </button>
+                <button class="btn-secondary bg-primary text-white hidden md:block">
+                    Register New Patient
+                </button>
+                <button class="fixed bottom-20 right-6 w-14 h-14 bg-primary rounded-full flex-center shadow-md hover:opacity-80 transition cursor-pointer md:hidden">
+                    <img src="./assets/imgs/patientsPageIcon/addPatientIcon.svg" class="w-6 h-6">
+                </button>
+            </div>
+        </div>
+
+    <!-- filter -->
+        <div class="flex gap-2 my-8 overflow-x-auto pb-8 md:bg-[#F4F3F1] md:borde  md:rounded-2xl md:p-2 md:w-fit scrollbar-hide">
+            <input type="radio" name="filter" id="all" class="hidden peer/all" checked>
+            <label for="all" class="filter-tab peer-checked/all:bg-white peer-checked/all:text-textPrimary  peer-checked/all:font-bold">
+            All Patients
+            </label>
+
+            <input type="radio" name="filter" id="active" class="hidden peer/active">
+            <label for="active" class="filter-tab peer-checked/active:bg-white peer-checked/active:text-textPrimary peer-checked/active:font-bold ">
+            Active Treatment
+            </label>
+
+            <input type="radio" name="filter" id="postop" class="hidden peer/postop">
+            <label for="postop" class="filter-tab peer-checked/postop:bg-white peer-checked/postop:text-textPrimary  peer-checked/postop:font-bold">
+            Post-Op Care
+            </label>
+
+            <input type="radio" name="filter" id="waitlist" class="hidden peer/waitlist">
+            <label for="waitlist" class="filter-tab peer-checked/waitlist:bg-white peer-checked/waitlist:text-textPrimary  peer-checked/waitlist:font-bold">
+            Waitlist
+            </label>
+
+        </div>
     </main>
 </div>
 

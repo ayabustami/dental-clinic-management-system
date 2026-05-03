@@ -69,7 +69,10 @@ body{
 @utility flex-center {
     @apply flex items-center justify-center;
 }
- 
+@utility btn-secondary {
+    @apply row-center font-semibold gap-2 py-2.5 px-6 rounded-2xl font-inter text-[14px] md:text-[16px] hover:opacity-80 transition cursor-pointer;
+}
+
 
 /*  layout & nav style*/
 
@@ -200,3 +203,14 @@ body{
     @apply col rounded-2xl bg-[#e3e2e0] md:w-37.5 md:h-47 lg:w-[207.75px] lg:h-[259.69px] w-32 h-40 items-center justify-center md:mb-5 lg:mb-15;
 }
 
+/*patients*/
+@utility dropdown-item {
+    @apply block w-full text-left px-4 py-2.5 font-inter text-[14px] text-textPrimary hover:bg-bgPrimary transition;
+}
+@utility filter-tab {
+    @apply shrink-0 px-5 py-2 rounded-xl font-inter text-[14px] text-greyheader/60 hover:bg-bgPrimary transition cursor-pointer;
+}
+@utility scrollbar-hide {
+    scrollbar-width: none;
+    &::-webkit-scrollbar { display: none; }
+}
