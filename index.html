@@ -112,45 +112,45 @@
             
         </section>
 
-        <section class="">
+        <section >
             <div class="row-between md:pt-16 md:pb-8 md:pl-8">
                 <h3 class="md:text-2xl text-[20px] font-manrope text-textPrimary font-semibold lg:font-bold">Today's Schedule</h3>
                 <a href="#" class="sm:underline sm:decoration-textPrimary sm:decoration-1 sm:underline-offset-3 text-[10px] lg:underline lg:decoration-[#AEC7F6] lg:decoration-1 lg:underline-offset-3 lg:text-[14px] font-inter lg:leading-5 lg:font-semibold text-textPrimary pr-15">View full calendar</a>
             </div>
             <div class="col gap-4 md:gap-3.5 md:px-8 py-6 md:py-0 ">
-                <div class=" p-5 md:p-0 rectangle-card md:row-center col  bg-white md:gap-20 lg:gap-18 lg:py-7 lg:pl-6 md:pl-5 lg:border-0 border-l-5">
+                <div class=" bg-white schedule-card">
                     <span class="font-manrope text-[14px] font-bold text-primary">10:00 AM</span>
-                    <div class="row-between lg:w-[85%] md:w-[65%] lg:pr-18.5">
+                    <div class="schedule-content ">
                         <div class="col">
                             <h5 class="font-manrope lg:text-[18px] text-[16px] font-bold text-textPrimary">Sarah Chen</h5>
                             <p class="font-inter lg:text-[14px] text-[12px] text-greyheader">Root Canal Therapy · Room 3</p>
                         </div>
                         <div class="bg-[#D7E0F5] status-container">
-                            <p class=" font-inter text-[10px] md:py-1 md:px-3 leading-4 lg:py-1.5 lg:px-4 tracking-[1px] font-semibold text-textMuted">RESTORATIVE</p>
+                            <p class=" status-badge text-textMuted">RESTORATIVE</p>
                         </div>
                     </div>
                 </div>
-                <div class=" p-5 md:p-0 rectangle-card md:row-center col   bg-[#f4f3f1] md:gap-20 lg:gap-18 lg:py-7 lg:pl-6 lg:border-0 border-l-5 md:pl-5 border-[#DAE3F7]">
+                <div class="schedule-card  bg-[#f4f3f1]   border-[#DAE3F7]">
                     <span class="font-manrope text-[12px] md:text-[14px] font-bold text-primary">11:30 AM</span>
-                    <div class="row-between lg:w-[85%] md:w-[65%] lg:pr-18.5">
+                    <div class="schedule-content ">
                         <div class="col">
                             <h5 class="font-manrope lg:text-[18px] text-[16px] font-bold text-textPrimary">Marcus Thorne</h5>
                             <p class="font-inter lg:text-[14px] text-[12px] text-greyheader">Dental Implants Consultation · Room 1</p>
                         </div>
                         <div class="bg-[#D6E3FF] status-container">
-                            <p class="font-inter text-[10px] leading-4 lg:py-1.5 lg:px-4 md:py-1 md:px-3 tracking-[1px] font-semibold text-[#2D476F]">SURGICAL</p>
+                            <p class="status-badge text-[#2D476F]">SURGICAL</p>
                         </div>
                     </div>
                 </div>
-                <div class=" p-5 md:p-0 rectangle-card md:row-center  col  bg-white md:gap-20 lg:gap-18 lg:py-7 lg:pl-6 lg:border-0 border-l-5 md:pl-5 border-[#8B0000]">
+                <div class=" bg-white   schedule-card  border-[#8B0000]">
                     <span class="font-manrope text-[14px] font-bold text-primary">12:15 AM</span>
-                    <div class="row-between lg:w-[85%] md:w-[65%] lg:pr-18.5">
+                    <div class="schedule-content ">
                         <div class="md:col">
                             <h5 class="font-manrope lg:text-[18px] text-[16px] font-bold text-textPrimary">Elena Rodriguez</h5>
                             <p class="font-inter lg:text-[14px] text-[12px] text-greyheader">Professional Whitening · Suite B</p>
                         </div>
                         <div class="bg-[#FFDBCB] status-container">
-                            <p class="font-inter text-[10px] leading-4 lg:py-1.5 lg:px-4 md:py-1 md:px-3 tracking-[1px] font-semibold text-[#6C391D]">COSMETIC</p>
+                            <p class="status-badge text-[#6C391D]">COSMETIC</p>
                         </div>
                     </div>
                 </div>
@@ -161,27 +161,27 @@
             <h3 class="font-manrope md:font-semibold lg:font-bold md:text-2xl text-textPrimary lg:pb-[28.5px] md:pb-6">Recent Patients</h3>
             <div class=" grid gap-4 lg:gap-[30.8px] py-6 grid-flow-col grid-cols-4 overflow-x-auto md:grid-cols-4">
                 <div class="patient-card">
-                    <img class="lg:w-[207.75px] lg:h-[259.69px] md:w-37.5 md:h-50 w-32 h-40 rounded-2xl" src="./assets/imgs/patientsCollection/patient1.webp" alt="Patient 1">
+                    <img class="patient-img" src="./assets/imgs/patientsCollection/patient1.webp" alt="Patient 1">
                     <div class="md:col lg:gap-[3.4px]">
-                        <h4 class="font-manrope lg:font-bold lg:text-[16px] text-[14px] font-semibold lg:text-textPrimary text-center lg:text-left">Sarah Chen</h4>
+                        <h4 class="patient-name">Sarah Chen</h4>
                         <p class="font-inter lg:text-[12px] text-greyheader hidden lg:block">Last Visit: 2 days ago</p>
                     </div>
                 </div>
                 <div class="patient-card">
-                    <img class="lg:w-[207.75px] lg:h-[259.69px] md:w-37.5 md:h-50 w-32 h-40 rounded-2xl" src="./assets/imgs/patientsCollection/patient2.webp" alt="Patient 2">
+                    <img class="patient-img" src="./assets/imgs/patientsCollection/patient2.webp" alt="Patient 2">
                     <div class="md:col lg:gap-[3.4px]">
-                        <h4 class="font-manrope lg:font-bold lg:text-[16px] text-[14px] font-semibold lg:text-textPrimary text-center lg:text-left">Marcus Thorne</h4>
+                        <h4 class="patient-name">Marcus Thorne</h4>
                         <p class="font-inter lg:text-[12px] text-greyheader hidden lg:block">Last Visit: 1 week ago</p>
                     </div>
                 </div>
                 <div class="patient-card">
-                    <img class="lg:w-[207.75px] lg:h-[259.69px] md:w-37.5 md:h-50 w-32 h-40 rounded-2xl" src="./assets/imgs/patientsCollection/patient3.webp" alt="Patient 3">
+                    <img class="patient-img" src="./assets/imgs/patientsCollection/patient3.webp" alt="Patient 3">
                     <div class="md:col lg:gap-[3.4px]">
-                        <h4 class="font-manrope lg:font-bold lg:text-[16px] text-[14px] font-semibold lg:text-textPrimary text-center lg:text-left">Elena Rodriguez</h4>
+                        <h4 class="patient-name">Elena Rodriguez</h4>
                         <p class="font-inter lg:text-[12px] text-greyheader hidden lg:block " >Last Visit: 3 days ago</p>
                     </div>
                 </div>
-                <div class=" col  rounded-2xl bg-[#e3e2e0] md:w-37.5 md:h-47 lg:w-[207.75px] lg:h-[259.69px] w-32 h-40  items-center justify-center md:mb-5 lg:mb-15">
+                <div class=" add-patient-card">
                     <a href="" class="flex-center col">
                         <img class="w-6.75 h-6.75 rounded-2xl" src="./assets/imgs/addIcon.svg" alt="Add Icon">
                         <p class="font-bold font-manrope text-[12px] lg:text-[14px] md:text-primary">Add New Record</p>

@@ -179,3 +179,24 @@ body{
 @utility hours-text {
     @apply font-inter text-[12px] md:text-[16px] text-textPrimary;
 }
+
+/* dashboard */
+@utility schedule-card {
+    @apply p-5 md:p-0 rectangle-card md:row-center col md:gap-20 lg:gap-18 lg:py-7 lg:pl-6 md:pl-5 lg:border-0 border-l-5;
+}
+@utility schedule-content {
+    @apply row-between lg:w-[85%] md:w-[65%] lg:pr-18.5;
+}
+@utility status-badge {
+    @apply font-inter text-[10px] leading-4 lg:py-1.5 lg:px-4 md:py-1 md:px-3 tracking-[1px] font-semibold;
+}
+@utility patient-img {
+    @apply lg:w-[207.75px] lg:h-[259.69px] md:w-37.5 md:h-50 w-32 h-40 rounded-2xl;
+}
+@utility patient-name {
+    @apply font-manrope lg:font-bold lg:text-[16px] text-[14px] font-semibold lg:text-textPrimary text-center lg:text-left;
+}
+@utility add-patient-card {
+    @apply col rounded-2xl bg-[#e3e2e0] md:w-37.5 md:h-47 lg:w-[207.75px] lg:h-[259.69px] w-32 h-40 items-center justify-center md:mb-5 lg:mb-15;
+}
+
