@@ -83,6 +83,7 @@
             </div>
             <div class="row gap-3 items-center">
                 <button class="btn-secondary border border-gray-200 text-textPrimary bg-[#E9E8E5]">
+                    <img src="./assets/imgs/patientsPageIcon/filterIcon.svg" class="w-3 h-3 mr-1">
                     Advanced Filters
                 </button>
                 <button class="btn-secondary bg-primary text-white hidden md:block">
@@ -95,7 +96,7 @@
         </div>
 
     <!-- filter -->
-        <div class="flex gap-2 my-8 overflow-x-auto pb-8 md:bg-[#F4F3F1] md:borde  md:rounded-2xl md:p-2 md:w-fit scrollbar-hide">
+        <div class="filter-bar">
             <input type="radio" name="filter" id="all" class="hidden peer/all" checked>
             <label for="all" class="filter-tab peer-checked/all:bg-white peer-checked/all:text-textPrimary  peer-checked/all:font-bold">
             All Patients
@@ -117,6 +118,102 @@
             </label>
 
         </div>
+
+<!-- Patient Table -->
+        <div class="rounded-2xl overflow-hidden grid-auto-sm md:col! gap-4 ml-5 md:ml-0">     
+            <div class="hidden md:grid md:grid-cols-[2fr_1.5fr_1.5fr_1.5fr_auto]  px-6 py-3 gap-4 border-b  border-gray-100">
+                <span class=" table-header ">Patient Name</span>
+                <span class="table-header ">Patient ID</span>
+                <span class="table-header ">Last Visit</span>
+                <span class="table-header ">Status</span>
+                <span></span>
+            </div>
+
+            <div class=" patient-row">
+                <div class="patient-main-info">
+                    <div class="patient-avatar bg-[#f5d7f1] text-[#6f2d6f] ">
+                        ES
+                    </div>
+                    <span class=" patient-name ">Eleanor Shellstrop</span>
+                </div>
+                <span class="patient-id ">#P-2024-9012</span>
+                <span class="patient-id ">Oct 12, 2025</span>
+                <div>
+                    <span class="status-container status-badge bg-[#D7E0F5] text-[#2D476F]">Active</span>
+                </div>
+                <div class="row-actions">
+                    <button class="view-profile-btn">View Profile</button>
+                    <button class="text-xl text-greyheader/70">⋮</button>
+                </div>
+                
+                
+            </div>
+
+            <div class=" patient-row">
+                <div class="patient-main-info">
+                    <div class=" patient-avatar bg-[#d7f5ee] text-[#2d6f69]" >
+                        CA
+                    </div>
+                    <span class=" patient-name ">Chidi Anagonye</span>
+                </div>
+                <span class="patient-id ">#P-2024-8841</span>
+                <span class="patient-id ">Jan 05, 2026</span>
+                <div>
+                    <span class="status-container status-badge bg-[#E2F0E8] text-[#2D6F4A]">Post-Op Care</span>
+                </div>
+                <div class="row-actions">
+                    <button class="view-profile-btn">View Profile</button>
+                    <button class="text-xl text-greyheader/70">⋮</button>
+                </div>
+            </div>
+
+            <div class=" patient-row">
+                <div class="patient-main-info">
+                    <div class=" patient-avatar bg-[#f5f5d7] text-[#6e6f2d]">
+                        TA
+                    </div>
+                    <span class=" patient-name ">Tahani Al-Jamil</span>
+                </div>
+                <span class="patient-id ">#P-2024-4112</span>
+                <span class="patient-id ">Dec 20, 2025</span>
+                <div>
+                    <span class="status-container status-badge bg-[#D7E0F5] text-[#2D476F]">Active</span>
+                </div>
+                <div class="row-actions">
+                    <button class="view-profile-btn">View Profile</button>
+                    <button class="text-xl text-greyheader/70">⋮</button>
+                </div>
+            </div>
+
+            <div class=" patient-row">
+                <div class="patient-main-info">
+                    <div class=" patient-avatar bg-[#d7daf5] text-[#2d376f] ">
+                        JM
+                    </div>
+                    <span class=" patient-name ">Jason Mendoza</span>
+                </div>
+                <span class="patient-id ">#P-2024-5501</span>
+                <span class="patient-id ">Feb 11, 2026</span>
+                <div>
+                    <span class="status-container status-badge bg-[#FFDAD6] text-[#93000A]">Missed</span>
+                </div>
+                <div class="row-actions">
+                    <button class="view-profile-btn">View Profile</button>
+                    <button class="text-xl text-greyheader/70">⋮</button>
+                </div>
+            </div>
+
+            <div class=" hidden md:flex md:row-between px-6 py-4 border-t border-gray-100">
+                <span class="font-inter font-medium text-[10px] md:text-[14px] text-greyheader/50">Showing 4 of 1,240 patients registered.</span>
+                <div class="row items-center gap-2">
+                    <button class="paging-btn"> < </button>
+                    <span class="font-inter text-[10px] md:text-[14px] text-textPrimary px-2">1/310</span>
+                    <button class="paging-btn"> > </button>
+                </div>
+            </div>
+
+        </div>
+
     </main>
 </div>
 

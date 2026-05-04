@@ -210,7 +210,48 @@ body{
 @utility filter-tab {
     @apply shrink-0 px-5 py-2 rounded-xl font-inter text-[14px] text-greyheader/60 hover:bg-bgPrimary transition cursor-pointer;
 }
+@utility filter-bar {
+    @apply flex md:gap-2 my-8 overflow-x-auto pb-2 md:bg-[#F4F3F1] md:rounded-2xl md:p-2 md:w-fit scrollbar-hide;
+}
 @utility scrollbar-hide {
     scrollbar-width: none;
     &::-webkit-scrollbar { display: none; }
+}
+
+@utility patient-row {
+    @apply grid grid-cols-[auto_1fr] md:grid-cols-[2fr_1.5fr_1.5fr_1.5fr_auto] gap-4 items-center px-6 py-4 border-b border-gray-100 hover:bg-bgPrimary transition;
+}
+@layer utilities {
+.grid-auto-sm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(225px, 100%), 1fr));
+    gap: 16px;
+}
+}
+@utility table-header {
+    @apply font-inter text-[11px] font-semibold text-greyheader tracking-[1px] uppercase;
+}
+@utility patient-avatar {
+    @apply shrink-0 w-10 h-10 rounded-full flex-center font-semibold text-sm tracking-wide;
+}
+@utility patient-name {
+    @apply font-manrope font-bold text-[14px] md:text-[16px] text-textPrimary;
+}
+@utility patient-main-info {
+    @apply row items-center gap-3 md:col-auto col-span-2;
+}
+@utility patient-row {
+    @apply grid grid-cols-[auto_1fr] md:grid-cols-[2fr_1.5fr_1.5fr_1.5fr_auto] gap-4 items-center p-6 border-b rounded-2xl bg-white border-gray-200 hover:bg-bgPrimary transition;
+}
+@utility patient-id {
+    @apply font-inter text-[13px] text-greyheader;
+}
+@utility row-actions {
+    @apply row items-center gap-4;
+}
+@utility view-profile-btn {
+    @apply font-inter text-[13px] font-semibold text-textPrimary hover:opacity-70 transition cursor-pointer;
+}
+@utility paging-btn {
+    @apply icon-btn w-8 h-8 border border-gray-200 rounded-lg flex-center hover:bg-bgPrimary;
 }
