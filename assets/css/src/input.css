@@ -273,11 +273,26 @@ body{
     @apply flex-center h-8 w-10 font-inter text-[16px]/[24px] text-white rounded-full cursor-pointer bg-[#1e3a5f] my-2;
 }
 @utility section-title {
-    @apply text-[16px] font-inter text-[#50616B] uppercase pb-4;
+    @apply md:text-[12px] lg:text-[14px]/[24px] font-inter text-[#50616B] uppercase pb-4;
 }
 @utility provider-row {
     @apply flex-center gap-1.75 pb-2 cursor-pointer;
 }
 @utility provider-name {
-    @apply text-[14px] lg:text-[16px] font-inter text-[#0B1C30] flex-1;
+    @apply text-[12px] lg:text-[14px] font-inter text-[#0B1C30] flex-1;
+}
+@utility main-calendar-cel {
+    @apply border-r border-b border-[#BEC8CD]/50 h-20 p-1;
+}
+@utility calendar-event {
+    @apply  border-l-[3px] rounded-r h-full px-1.5 py-1 cursor-pointer hover:opacity-80 overflow-hidden;
+}
+@utility cell-time {
+    @apply border-r border-b border-[#BEC8CD]/50 px-1.5 pt-1.5 text-right text-[12px]/[16px] font-inter font-semibold text-gray-300 h-20 bg-stone-50;
+}
+@utility cell-day{
+    @apply lg:text-[16px] text-[14px] font-inter tracking-widest text-[#50616B];
+}
+@utility calender-cell-header{
+    @apply px-2 py-2 text-center border-r border-[#BEC8CD];
 }

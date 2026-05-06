@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="bg-bgPrimary ">
+<body class="bg-bgPrimary md:overflow-hidden">
 <div class="page-grid ">
     <header class=" page-header ">
             <div class="row md:gap-4 gap-1.5">
@@ -74,9 +74,9 @@
                 </a>
             </nav>
         </aside>
-    <main class="flex flex-col md:flex-col lg:grid lg:grid-cols-[328px_1fr] lg:h-screen lg:overflow-hidden">
-            <div class="md:order-2 lg:order-1 flex flex-col gap-4 px-4 py-5 md:grid md:grid-cols-3 md:gap-13 md:px-4 md:py-4 lg:flex lg:flex-col lg:gap-10 lg:px-6 lg:py-8 bg-white  lg:overflow-y-auto md:fixed bottom-0  lg:static">
-                <div class="md:col-span-3 lg:col-span-1 md:fixed bottom-3 right-3  lg:static">
+    <main class="flex flex-col md:flex-col lg:grid lg:grid-cols-[minmax(260px,320px)_1fr] md:h-screen ">
+        <div class="md:order-2 lg:order-1 flex flex-col gap-4 px-4 py-5 md:grid md:grid-cols-3 md:gap-13 md:px-4 md:py-4 lg:flex lg:flex-col lg:gap-10 lg:px-6 lg:py-8 bg-white  lg:overflow-y-auto md:fixed bottom-0   md:rounded-t-4xl lg:rounded-t-none   lg:static">
+                <div class="md:col-span-3 lg:col-span-1 md:fixed bottom-3 right-3 lg:static">
                     <button class="lg:w-full bg-primary hover:bg-textPrimary transition-colors md:rounded-full lg:rounded-2xl">
                         <div class=" row-center gap-2 lg:py-2 lg:px-13 p-3.75">
                             <img src="./assets/imgs/ScheduleIcons/addIcon.svg" alt="Add Icon" class="hidden lg:block w-4 h-4">
@@ -87,7 +87,7 @@
                 </div>
                 <div class="md:col-span-1 lg:col-span-1">
                     <div class="flex-between mb-2">
-                            <span class="text-[16px]/[24px] font-inter text-greyheader/70 tracking-wide">May 2026</span>
+                            <span class="md:text-[14px] lg:text-[16px]/[24px] font-inter text-greyheader/70 tracking-wide">May 2026</span>
                             <div class="flex gap-0">
                                 <button class="paging-btn"> ‹ </button>
                                 <button class="paging-btn"> › </button>
@@ -162,12 +162,209 @@
                         <span class="text-[11px] font-inter text-[#0B1C30]">No-show</span>
                     </div>
                 </div>
-            </div>    
-            <div class="order-1 lg:order-2 overflow-auto lg:h-screen">
-                DDD
-            </div>
+        </div>    
+        <div class="order-1 lg:order-2 overflow-x-hidden lg:h-screen md:overflow-y-auto">
+            <div class="flex-1 col  bg-white">
+        <!-- Calkendar Headers -->
+                <div class="grid border-b border-[#BEC8CD] drop-shadow-md bg-white grid-cols-[60px_repeat(7,1fr)] fixed md:w-[calc(100vw-95px)] lg:w-[calc(100vw-256px-320px)]" >
+                        <div class="border-r border-[#BEC8CD] flex-center text-[#50616B]">
+                            <i class="ti ti-clock"></i>
+                        </div>
+                        <div class="calender-cell-header">
+                            <div class="cell-day">MON</div>
+                            <div class="cell-day">5</div>
+                        </div>
+                        <div class="calender-cell-header">
+                            <div class="cell-day text-[#005A71] font-semibold">TUE</div>
+                            <div class="cell-day text-[#005A71] font-semibold">6</div>
+                        </div>
+                        <div class="calender-cell-header">
+                            <div class="cell-day">WED</div>
+                            <div class="cell-day">7</div>
+                        </div>
+                        <div class="calender-cell-header">
+                            <div class="cell-day">THU</div>
+                            <div class="cell-day">8</div>
+                        </div>
+                        <div class="calender-cell-header">
+                            <div class="cell-day">FRI</div>
+                            <div class="cell-day">9</div>
+                        </div>
+                        <div class="calender-cell-header">
+                            <div class="cell-day">SAT</div>
+                            <div class="cell-day">10</div>
+                        </div>
+                        <div class="px-2 py-2 text-center">
+                            <div class="cell-day">SUN</div>
+                            <div class="cell-day">11</div>
+                        </div>      
+                </div>
+        <!-- Calendar Cells -->
+                <div class="flex-1 overflow-y-auto overflow-x-auto">
+                    <div class="grid min-w-120 grid-cols-[60px_repeat(7,1fr)]">
+        <!-- 8:00 -->
+                        <div class="cell-time text-[#50616B]">8:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>   
+        <!-- 9:00 -->
+                        <div class="cell-time text-[#50616B]">9:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel  bg-[#0C97FA]/10 hover:scale-120 transition-transform">
+                            <div class="  border-[#15803D] bg-[#F0FDF4] calendar-event">
+                                <div class="text-[10px] font-bold text-[#15803D]">Root Canal</div>
+                                <div class="text-[9px] text-[#15803D] opacity-80">James Anderson</div>
+                                <div class="text-[9px] text-[#15803D] opacity-70">09:00 – 10:00</div>
+                                <span class="inline-block mt-0.5 text-[#DCFCE7] bg-[#15803D] text-[8px] font-bold px-1 py-0.5 rounded">Confirmed</span>
+                            </div>
+                        </div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel hover:scale-120 transition-transform">
+                            <div class="  border-[#15803D] bg-[#F0FDF4] calendar-event">
+                                <div class="text-[10px] font-bold text-[#15803D]">Bridge Repair</div>
+                                <div class="text-[9px] text-[#15803D] opacity-80">Emily White</div>
+                            </div>
+                        </div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <!-- 10:00 -->
+                        <div class="cell-time text-[#50616B]">10:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10 hover:scale-120 transition-transform">
+                            <div class=" border-[#F97316] bg-[#fde0bf] calendar-event">
+                                <div class="text-[10px] font-bold text-[#F97316]">Dental Implants</div>
+                                <div class="text-[9px] text-[#F97316] opacity-80">Robert Miller</div>
+                                <div class="text-[9px] text-[#F97316] opacity-70">10:00 – 11:30</div>
+                                <span class="inline-block mt-0.5 bg-[#F97316] text-white  text-[8px] font-bold px-1 py-0.5 rounded">NO SHOW</span>
+                            </div>
+                        </div>
+                        <div class="main-calendar-cel opacity-45 ">
+                            <div class="calendar-event border-dashed border-[#832424] border-st bg-[#FEF2F2] ">
+                                <div class="text-[10px] font-bold text-[#7F1D1D]">Checkup  </div>
+                                <div class="text-[9px] text-[#7F1D1D] opacity-80">Sarah Connor</div>
+                                <span class="inline-block mt-0.5 text-[#FDF2F2] bg-[#EF4444] text-[8px] font-bold px-1 py-0.5 rounded">Cancelled</span>
 
-        </main>
+                            </div>
+                        </div>
+                        <div class="main-calendar-cel hover:scale-120 transition-transform">
+                            <div class=" border-[#15803D] bg-[#F0FDF4] calendar-event">
+                                <div class="text-[10px] font-bold text-[#15803D]">Consultation</div>
+                                <div class="text-[9px] text-[#15803D] opacity-80">Tom Davis</div>
+                                
+                            </div>
+                        </div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+        <!-- 11:00 -->
+                        <div class="cell-time text-[#50616B]">11:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+        <!-- 12:00 -->
+                        <div class="cell-time text-[#50616B]">12:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+        <!-- 13:00 -->
+                        <div class="cell-time text-[#50616B]">13:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+        <!-- 14:00 -->
+                        <div class="cell-time text-[#50616B]">14:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel">
+                            <div class="border-2 border-dashed border-[#005A71] bg-[#005A71]/5 rounded-md h-[calc(100%-4px)] flex-center text-gray-300 text-xl cursor-pointer hover:border-[#023b49] hover:text-[#005A71] transition-colors">+</div>
+                        </div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+
+        <!-- 15:00 -->
+                        <div class="cell-time text-[#50616B]">15:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+
+        <!-- 16:00 -->
+                        <div class="cell-time text-[#50616B]">16:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+        <!-- 17:00 -->
+                        <div class="cell-time text-[#50616B]">17:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>    
+        <!-- 18:00 -->
+                        <div class="cell-time text-[#50616B]">18:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="h-20 p-1"></div>
+        <!-- 19:00 -->
+                        <div class="cell-time text-[#50616B]">19:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="h-20 p-1"></div>
+        <!-- 20:00 -->
+                        <div class="cell-time text-[#50616B]">20:00</div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel bg-[#0C97FA]/10"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="main-calendar-cel"></div>
+                        <div class="h-20 p-1"></div>
+        
+
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    
+
+    </main>
 </div>
 
 </body>
