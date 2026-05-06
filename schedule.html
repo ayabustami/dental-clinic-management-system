@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
 </head>
 
 <body class="bg-bgPrimary ">
@@ -72,7 +74,97 @@
                 </a>
             </nav>
         </aside>
-        <main>
+        <main class="lg:grid lg:grid-cols-[328px_1fr]">
+            <div  class="px-6 py-8 bg-white col items-center gap-10  ">
+                <div>
+                    <button class="bg-primary rounded-2xl  hover:bg-textPrimary transition-colors ">
+                        <div class=" row-center gap-2 py-2 px-13">
+                            <img src="./assets/imgs/ScheduleIcons/addIcon.svg" alt="Add Icon" class="w-4 h-4">
+                            <span class=" text-[#D3F1FF] text-[18px] font-semibold font-manrope ">Quick Book</span>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[16px]/[24px]  font-inter text-greyheader/70 tracking-wide">May 2026</span>
+                            <div class="flex gap-0">
+                                <button class="paging-btn"> l  </button>
+                                <button class="paging-btn"> r </button>
+                            </div>
+                    </div>
+                    <div class="grid grid-cols-7">
+                        <div class="calendar-header">S</div>
+                        <div class="calendar-header">M</div>
+                        <div class="calendar-header">T</div>
+                        <div class="calendar-header">W</div>
+                        <div class="calendar-header">T</div>
+                        <div class="calendar-header">F</div>
+                        <div class="calendar-header">S</div>
+
+                        <div class="calendar-muted-day">27</div>
+                        <div class="calendar-muted-day">28</div>
+                        <div class="calendar-muted-day">29</div>
+                        <div class="calendar-muted-day">30</div>
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-current-day">6</div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day">10</div>
+
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day">12</div>
+                        <div class="calendar-day">13</div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day">17</div>
+
+                        
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="section-title">Providers</div>
+                        <label class="provider-row">
+                            <input type="checkbox"checked >
+                            <span class="provider-name">Dr. Sarah Smith</span>
+                            <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                        </label>
+                        <label class="provider-row">
+                            <input type="checkbox" checked>
+                            <span class="provider-name">Dr. Michael Jones</span>
+                            <div class="w-3 h-3 rounded-full bg-gray-400"></div>
+                        </label>
+                        <label class="provider-row">
+                            <input type="checkbox" >
+                            <span class="provider-name">Dr. Elena Rodriguez</span>
+                            <div class="w-3 h-3 rounded-full bg-gray-200"></div>
+                        </label>
+                </div>
+                <div class="w-full">
+                    <div class="section-title">Legend</div>
+                    <div class="flex gap-2 pb-1">
+                        <div class="w-3 h-3 rounded-sm bg-[#DCFCE7] border border-[#22C55E] shrink-0"></div>
+                        <span class="text-[11px] font-inter text-[#0B1C30]">Confirmed</span>
+                    </div>
+                    <div class="flex gap-2 pb-1">
+                        <div class="w-3 h-3 rounded-sm bg-[#FEE2E2] border border-[#EF4444] shrink-0"></div>
+                        <span class="text-[11px] font-inter text-[#0B1C30]">Canceled</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="w-3 h-3 rounded-sm bg-[#FFEDD5] border border-[#F97316] shrink-0"></div>
+                        <span class="text-[11px] font-inter text-[#0B1C30]">No-show</span>
+                    </div>
+                </div>
+            </div>    
+            <div>
+                dd
+            </div>
 
         </main>
 </div>

@@ -255,3 +255,29 @@ body{
 @utility paging-btn {
     @apply icon-btn w-8 h-8 border border-gray-200 rounded-lg flex-center hover:bg-bgPrimary;
 }
+
+/* schedule */
+@utility calendar-header {
+    @apply flex-center h-3.75 w-10 font-inter  text-[10px]/[15px] font-bold text-[#6F787D] my-4;
+}
+@utility calendar-muted-day {
+    @apply flex-center h-8 w-10  font-inter text-[16px]/[24px] text-[#cbd0d3] my-2;
+}
+@utility calendar-day{
+    @apply flex-center h-8 w-10 my-2  font-inter text-[16px]/[24px] text-[#0B1C30] hover:bg-stone-200 rounded-full cursor-pointer transition;
+}
+@utility calendar-day-hover {
+    @apply flex-center h-8 w-10  font-inter text-[16px]/[24px] text-textPrimary rounded-full hover:bg-bgPrimary transition;
+}
+@utility calendar-current-day {
+    @apply flex-center h-8 w-10 font-inter text-[16px]/[24px] text-white rounded-full cursor-pointer bg-[#1e3a5f] my-2;
+}
+@utility section-title {
+    @apply text-[16px] font-inter text-[#50616B] uppercase pb-4;
+}
+@utility provider-row {
+    @apply flex-center gap-1.75 pb-2 cursor-pointer;
+}
+@utility provider-name {
+    @apply text-[16px] font-inter text-[#0B1C30] flex-1;
+}
