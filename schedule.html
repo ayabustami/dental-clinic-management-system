@@ -74,22 +74,23 @@
                 </a>
             </nav>
         </aside>
-        <main class="lg:grid lg:grid-cols-[328px_1fr]">
-            <div  class="px-6 py-8 bg-white col items-center gap-10  ">
-                <div>
-                    <button class="bg-primary rounded-2xl  hover:bg-textPrimary transition-colors ">
-                        <div class=" row-center gap-2 py-2 px-13">
-                            <img src="./assets/imgs/ScheduleIcons/addIcon.svg" alt="Add Icon" class="w-4 h-4">
-                            <span class=" text-[#D3F1FF] text-[18px] font-semibold font-manrope ">Quick Book</span>
+    <main class="flex flex-col md:flex-col lg:grid lg:grid-cols-[328px_1fr] lg:h-screen lg:overflow-hidden">
+            <div class="md:order-2 lg:order-1 flex flex-col gap-4 px-4 py-5 md:grid md:grid-cols-3 md:gap-13 md:px-4 md:py-4 lg:flex lg:flex-col lg:gap-10 lg:px-6 lg:py-8 bg-white  lg:overflow-y-auto md:fixed bottom-0  lg:static">
+                <div class="md:col-span-3 lg:col-span-1 md:fixed bottom-3 right-3  lg:static">
+                    <button class="lg:w-full bg-primary hover:bg-textPrimary transition-colors md:rounded-full lg:rounded-2xl">
+                        <div class=" row-center gap-2 lg:py-2 lg:px-13 p-3.75">
+                            <img src="./assets/imgs/ScheduleIcons/addIcon.svg" alt="Add Icon" class="hidden lg:block w-4 h-4">
+                            <img src="./assets/imgs/ScheduleIcons/newAppointment.svg" alt="Add Icon" class="lg:hidden block w-4 h-4">
+                            <span class="hidden lg:block text-[#D3F1FF] text-[18px] font-semibold font-manrope ">Quick Book</span>
                         </div>
                     </button>
                 </div>
-                <div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-[16px]/[24px]  font-inter text-greyheader/70 tracking-wide">May 2026</span>
+                <div class="md:col-span-1 lg:col-span-1">
+                    <div class="flex-between mb-2">
+                            <span class="text-[16px]/[24px] font-inter text-greyheader/70 tracking-wide">May 2026</span>
                             <div class="flex gap-0">
-                                <button class="paging-btn"> l  </button>
-                                <button class="paging-btn"> r </button>
+                                <button class="paging-btn"> ‹ </button>
+                                <button class="paging-btn"> › </button>
                             </div>
                     </div>
                     <div class="grid grid-cols-7">
@@ -128,11 +129,11 @@
                         
                     </div>
                 </div>
-                <div class="w-full">
+                <div class="w-full md:col-span-1 lg:col-span-1">
                     <div class="section-title">Providers</div>
                         <label class="provider-row">
                             <input type="checkbox"checked >
-                            <span class="provider-name">Dr. Sarah Smith</span>
+                            <span class="provider-name ">Dr. Sarah Smith</span>
                             <div class="w-3 h-3 rounded-full bg-blue-600"></div>
                         </label>
                         <label class="provider-row">
@@ -146,7 +147,7 @@
                             <div class="w-3 h-3 rounded-full bg-gray-200"></div>
                         </label>
                 </div>
-                <div class="w-full">
+                <div class="w-full md:col-span-1 lg:col-span-1">
                     <div class="section-title">Legend</div>
                     <div class="flex gap-2 pb-1">
                         <div class="w-3 h-3 rounded-sm bg-[#DCFCE7] border border-[#22C55E] shrink-0"></div>
@@ -162,8 +163,8 @@
                     </div>
                 </div>
             </div>    
-            <div>
-                dd
+            <div class="order-1 lg:order-2 overflow-auto lg:h-screen">
+                DDD
             </div>
 
         </main>
