@@ -74,19 +74,23 @@
                 </a>
             </nav>
         </aside>
-        <main>
+        <main class="bg-white">
             <div class="px-6 py-4">
-                <div class="flex-between text-[16px]  text-[#50616B] mb-4">
+                <div class="flex-between text-[16px]  font-inter  text-[#50616B] mb-4">
                     <span>May 2026</span>
+                    <div class="flex gap-0">
+                        <button class="paging-btn"> ‹ </button>
+                        <button class="paging-btn"> › </button>
+                    </div>
                 </div>
                 <div class="flex-between">
                     <div class="calendar-day-native">
-                        <span class="text-[12px] text-[#50616B]">M</span>
-                        <span class="text-[14px] text-primary">5</span>
+                        <span class="text-[12px]  font-inter  text-[#50616B]">M</span>
+                        <span class="text-[14px]  font-inter  text-primary">5</span>
                     </div>
 
                     <div class="col-center gap-2">
-                        <span class="text-[12px] opacity-60">TU</span>
+                        <span class="text-[12px] font-inter text-[#50616B]">TU</span>
                         <div class="calendar-day-active-native" >
                             <span class="text-[16px] text-white">6</span>
                         </div>
@@ -94,28 +98,28 @@
                     </div>
 
                     <div class="calendar-day-native">
-                        <span class="text-[12px] text-[#50616B]">W</span>
-                        <span class="text-[14px] text-primary">7</span>
+                        <span class="text-[12px]  font-inter  text-[#50616B]">W</span>
+                        <span class="text-[14px]  font-inter  text-primary">7</span>
                     </div>
 
                     <div class="calendar-day-native">
-                        <span class="text-[12px] text-[#50616B]">TH</span>
-                        <span class="text-[14px]  text-primary">8</span>
+                        <span class="text-[12px]  font-inter  text-[#50616B]">TH</span>
+                        <span class="text-[14px]  font-inter  text-primary">8</span>
                     </div>
 
                     <div class="calendar-day-native">
-                        <span class="text-[12px] text-[#50616B]">F</span>
-                        <span class="text-[14px]  text-primary">9</span>
+                        <span class="text-[12px]  font-inter  text-[#50616B]">F</span>
+                        <span class="text-[14px]  font-inter  text-primary">9</span>
                     </div>
 
                     <div class="calendar-day-native">
-                        <span class="text-[12px] text-[#50616B]">S</span>
-                        <span class="text-[14px]  text-primary">10</span>
+                        <span class="text-[12px]  font-inter  text-[#50616B]">S</span>
+                        <span class="text-[14px]  font-inter  text-primary">10</span>
                     </div>
 
                     <div class="calendar-day-native">
-                        <span class="text-[12px] text-[#50616B]">S</span>
-                        <span class="text-[14px]  text-primary">11</span>
+                        <span class="text-[12px]  font-inter  text-[#50616B]">S</span>
+                        <span class="text-[14px]  font-inter  text-primary">11</span>
                     </div>
                 </div>
             </div>
@@ -125,6 +129,195 @@
                 <button class="filter-btn-native text-[#9CA3AF] font-medium border-[#9CA3AF]">No show</button>
                 <button class="filter-btn-native text-[#9CA3AF] font-medium border-[#9CA3AF]">Cancelled</button>
             </div>
+
+            <div class="flex-between px-6  pb-4 pt-.5">
+                <span class="text-[16px]/[28px] font-bold font-inter text-primary row gap-1 ">Tuesday, May 6</span>
+                <a href="#" class="text-[14px] font-bold  font-inter text-primary">
+                    <span>Week view</span>
+                    <i class="ti ti-arrow-right  "></i>
+                </a>
+                
+            </div>       
+
+            <div class="col  px-6 gap-4 pb-15 ">
+                <div class="bg-white rounded-2xl p-5 gap-8 flex  drop-shadow-sm">
+                    <div class="col items-center gap-1.5">
+                        <span class="text-[14px] font-inter font-semibold text-primary">9:00</span>
+                        <span class="text-[10px] font-inter text-[#9CA3AF]">10:00</span>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="flex-between">
+                            <div class="col">
+                                <span class="text-[16px] font-inter font-semibold text-primary">Root Canal</span>
+                                <span class="text-[12px] font-medium font-inter text-[#9CA3AF]">
+                                    <i class="ti ti-user text-xs"></i> 
+                                    James Anderson
+                                </span>
+                            </div>
+                            <div class="patient-avatar bg-[#F0FDF4] text-[#2A8546]font-bold text-xs flex-center rounded-xl">
+                                JA
+                            </div>
+                        </div>
+
+                        <div class="flex justify-start items-center  pt-2 ">
+                            <i class="ti ti-check text-xs text-[#2A8546] "></i>                            
+                            <span class="text-[11px] font-inter text-[#2A8546] font-bold pr-6 pl-1 ">Confirmed</span>
+                            <span class="text-[11px] font-inter text-[#9CA3AF]">Dr. Sarah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 gap-8 flex  drop-shadow-sm">
+                    <div class="col items-center gap-1.5">
+                        <span class="text-[14px] font-inter font-semibold text-primary">10:00</span>
+                        <span class="text-[10px] font-inter text-[#9CA3AF]">11:00</span>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="flex-between">
+                            <div class="col">
+                                <span class="text-[16px] font-inter font-semibold text-primary">Dental Implants</span>
+                                <span class="text-[12px] font-medium font-inter text-[#9CA3AF]">
+                                    <i class="ti ti-user text-xs"></i> 
+                                    Robert Miller
+                                </span>
+                            </div>
+                            <div class="patient-avatar bg-[#FFF7ED] text-[#EA7E1D] font-bold text-xs flex-center rounded-xl">
+                                RM
+                            </div>
+                        </div>
+
+                        <div class="flex justify-start items-center  pt-2 ">
+                            <i class="ti ti-alert-triangle text-[#EA7E1D] text-sm"></i>
+                            <span class="text-[11px] font-inter text-[#EA7E1D] font-bold pr-6 pl-1 ">NO SHOW</span>
+                            <span class="text-[11px] font-inter text-[#9CA3AF]">Dr. Sarah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 gap-8 flex  drop-shadow-sm">
+                    <div class="col items-center gap-1.5">
+                        <span class="text-[14px] font-inter font-semibold text-primary">9:00</span>
+                        <span class="text-[10px] font-inter text-[#9CA3AF]">10:00</span>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="flex-between">
+                            <div class="col">
+                                <span class="text-[16px] font-inter font-semibold text-primary">Root Canal</span>
+                                <span class="text-[12px] font-medium font-inter text-[#9CA3AF]">
+                                    <i class="ti ti-user text-xs"></i> 
+                                    James Anderson
+                                </span>
+                            </div>
+                            <div class="patient-avatar bg-[#F0FDF4] text-[#2A8546]font-bold text-xs flex-center rounded-xl">
+                                JA
+                            </div>
+                        </div>
+
+                        <div class="flex justify-start items-center  pt-2 ">
+                            <i class="ti ti-check text-xs text-[#2A8546] "></i>                            
+                            <span class="text-[11px] font-inter text-[#2A8546] font-bold pr-6 pl-1 ">Confirmed</span>
+                            <span class="text-[11px] font-inter text-[#9CA3AF]">Dr. Sarah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 gap-8 flex  drop-shadow-sm">
+                    <div class="col items-center gap-1.5">
+                        <span class="text-[14px] font-inter font-semibold text-primary">10:00</span>
+                        <span class="text-[10px] font-inter text-[#9CA3AF]">11:00</span>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="flex-between">
+                            <div class="col">
+                                <span class="text-[16px] font-inter font-semibold text-primary">Dental Implants</span>
+                                <span class="text-[12px] font-medium font-inter text-[#9CA3AF]">
+                                    <i class="ti ti-user text-xs"></i> 
+                                    Robert Miller
+                                </span>
+                            </div>
+                            <div class="patient-avatar bg-[#FFF7ED] text-[#EA7E1D] font-bold text-xs flex-center rounded-xl">
+                                RM
+                            </div>
+                        </div>
+
+                        <div class="flex justify-start items-center  pt-2 ">
+                            <i class="ti ti-alert-triangle text-[#EA7E1D] text-sm"></i>
+                            <span class="text-[11px] font-inter text-[#EA7E1D] font-bold pr-6 pl-1 ">NO SHOW</span>
+                            <span class="text-[11px] font-inter text-[#9CA3AF]">Dr. Sarah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 gap-8 flex  drop-shadow-sm">
+                    <div class="col items-center gap-1.5">
+                        <span class="text-[14px] font-inter font-semibold text-primary">9:00</span>
+                        <span class="text-[10px] font-inter text-[#9CA3AF]">10:00</span>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="flex-between">
+                            <div class="col">
+                                <span class="text-[16px] font-inter font-semibold text-primary">Root Canal</span>
+                                <span class="text-[12px] font-medium font-inter text-[#9CA3AF]">
+                                    <i class="ti ti-user text-xs"></i> 
+                                    James Anderson
+                                </span>
+                            </div>
+                            <div class="patient-avatar bg-[#F0FDF4] text-[#2A8546]font-bold text-xs flex-center rounded-xl">
+                                JA
+                            </div>
+                        </div>
+
+                        <div class="flex justify-start items-center  pt-2 ">
+                            <i class="ti ti-check text-xs text-[#2A8546] "></i>                            
+                            <span class="text-[11px] font-inter text-[#2A8546] font-bold pr-6 pl-1 ">Confirmed</span>
+                            <span class="text-[11px] font-inter text-[#9CA3AF]">Dr. Sarah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 gap-8 flex  drop-shadow-sm">
+                    <div class="col items-center gap-1.5">
+                        <span class="text-[14px] font-inter font-semibold text-primary">10:00</span>
+                        <span class="text-[10px] font-inter text-[#9CA3AF]">11:00</span>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="flex-between">
+                            <div class="col">
+                                <span class="text-[16px] font-inter font-semibold text-primary">Dental Implants</span>
+                                <span class="text-[12px] font-medium font-inter text-[#9CA3AF]">
+                                    <i class="ti ti-user text-xs"></i> 
+                                    Robert Miller
+                                </span>
+                            </div>
+                            <div class="patient-avatar bg-[#FFF7ED] text-[#EA7E1D] font-bold text-xs flex-center rounded-xl">
+                                RM
+                            </div>
+                        </div>
+
+                        <div class="flex justify-start items-center  pt-2 ">
+                            <i class="ti ti-alert-triangle text-[#EA7E1D] text-sm"></i>
+                            <span class="text-[11px] font-inter text-[#EA7E1D] font-bold pr-6 pl-1 ">NO SHOW</span>
+                            <span class="text-[11px] font-inter text-[#9CA3AF]">Dr. Sarah</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed bottom-14 right-3 bg-primary rounded-full ">
+                    <a href="#" >
+                        <div class=" row-center gap-2 lg:py-2 lg:px-13 p-3.75">
+                            <img src="./assets/imgs/ScheduleIcons/newAppointment.svg" alt="Add Icon" class="w-4 h-4">
+                        </div>
+                    </a>
+            </div>
+            
+
+   
         </main>
   
 </div>

@@ -80,7 +80,7 @@ body{
 /*  layout & nav style*/
 
 @utility page-grid {
-    @apply grid min-h-screen grid-cols-1 md:grid-cols-[95px_1fr] lg:grid-cols-[256px_1fr];
+    @apply grid md:min-h-screen grid-cols-1 md:grid-cols-[95px_1fr] lg:grid-cols-[256px_1fr];
 }
 
 @utility page-header {
@@ -309,5 +309,5 @@ body{
     @apply flex overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-hide;
   }
 @utility filter-btn-native{
-    @apply border px-6 py-2 rounded-full text-[14px] ;
+    @apply border px-6 py-2 rounded-full text-[14px] font-inter ;
 }
