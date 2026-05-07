@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/src/output.css" rel="stylesheet">
+    <link rel="icon" href="./assets/imgs/appIcon.svg" type="image/svg+xml">
+    <title>Schedule - Denti Clinics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+</head>
+
+<body class="bg-bgPrimary md:overflow-hidden">
+<div class="page-grid ">
+    <header class=" page-header ">
+            <div class="row md:gap-4 gap-1.5">
+                <div class="logo-container">
+                <img class="logo-icon " src="./assets/imgs/LogoIcon.svg" alt="Logo">
+                </div> 
+                <h1 class="font-manrope text-[18px] font-bold stroke-[#E2E8F0] flex-center">Denti Clinics</h1>
+            </div>
+            <div class="search-bar">
+                <img src="./assets/imgs/searchIcon.svg" alt="Search Icon" class="w-4 h-4">    
+                <input class="flex-1 outline-none bg-transparent font-manrope text-[14px]" placeholder="Search patient or record..." />
+            </div>
+            <div class="row lg:gap-6.5 gap-4">
+                <div class="row md:gap-4 items-center justify-center">
+                    <button type="button" aria-label="Notifications" class="icon-btn ">
+                        <img src="./assets/imgs/alertIcon.svg" alt="Notification Icon" class="w-5 h-5 ">
+                    </button>
+                    <button type="button" aria-label="Help information" class="icon-btn ">
+                        <img src="./assets/imgs/infoIcon.svg" alt="Info Icon" class="w-5 h-5 hidden lg:flex">
+                    </button>
+                </div>
+            <div>
+                <button type="button" aria-label="Profile" class="icon-btn ">
+                    <img src="./assets/imgs/profileIcon.svg" alt="Profile Icon" class="w-8 h-8 rounded-full">
+                </button>
+            </div>
+            </div>    
+    </header>
+
+    <aside class="page-asidebar ">
+            <nav class="main-nav ">
+                <a href="./index.html" class="nav-unselected">
+                    <img src="./assets/imgs/nav_icons/dashboard.svg" alt="Dashboard Icon" class="lg:pt-0 nav-icon ">
+                    <span class="nav-label-unselected">Dashboard</span>
+                </a>
+                <a href="./patients.html" class="nav-unselected">
+                    <img src="./assets/imgs/nav_icons/patiens.svg" alt="Patients Icon" class="nav-icon">
+                    <span class="nav-label-unselected ">Patients</span>
+                </a>
+                <a href="./schedule-native.html" class="nav-selected">
+                    <img src="./assets/imgs/nav_icons/scheduleSelected.svg" alt="Schedule Icon" class="nav-icon">
+                    <span class="nav-label-selected ">Schedule</span>
+                </a>
+                <a href="./setting.html" class=" nav-unselected">
+                    <img src="./assets/imgs/nav_icons/settings.svg" alt="Settings Icon" class="nav-icon">
+                    <span class="nav-label-unselected ">Settings</span>
+                </a>
+            </nav>
+            <nav class="bottom-nav">
+                <a href="./help.html" class="bottom-nav-link">
+                    <img src="./assets/imgs/nav_icons/help.svg" alt="Help Icon" class="nav-icon">
+                    <span class="nav-label-unselected  ">Help</span>
+                </a>
+                <a href="./login.html" class="bottom-nav-link">
+                    <img src="./assets/imgs/nav_icons/signout.svg" alt="Logout Icon" class="nav-icon">
+                    <span class="nav-label-unselected ">Logout</span>
+                </a>
+            </nav>
+        </aside>
+  
+</div>
+
+</body>
+</html>
