@@ -72,6 +72,9 @@ body{
 @utility btn-secondary {
     @apply row-center font-semibold gap-2 py-2.5 px-6 rounded-2xl font-inter text-[14px] md:text-[16px] hover:opacity-80 transition cursor-pointer;
 }
+@utility col-center {
+    @apply flex flex-col items-center justify-center;
+}
 
 
 /*  layout & nav style*/
@@ -295,4 +298,16 @@ body{
 }
 @utility calender-cell-header{
     @apply px-2 py-2 text-center border-r border-[#BEC8CD];
+}
+@utility calendar-day-native {
+    @apply w-9.5 h-13 flex flex-col items-center justify-center gap-2;
+}
+@utility calendar-day-active-native {
+  @apply w-12 h-14 flex flex-col items-center justify-center rounded-full bg-primary;
+}
+@utility scroll-row {
+    @apply flex overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-hide;
+  }
+@utility filter-btn-native{
+    @apply border px-6 py-2 rounded-full text-[14px] ;
 }
