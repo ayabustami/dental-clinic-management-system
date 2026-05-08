@@ -76,12 +76,44 @@
         </aside>
         <main class="p-6 md:p-7.5 lg:p-10">
             <div class="font-medium tracking-wide uppercase flex items-center gap-1">
-                <a href="./schedule.html"  class="font-inter hover:text-primary text-[#50616B] cursor-pointer text-[12px]">Schedule</a>
+                <a href="./schedule.html"  class="font-inter hover:text-primary text-[#50616B] cursor-pointer text-[12px] md:flex hidden">Schedule</a>
+                <a href="./schedule-native.html"  class="font-inter hover:text-primary text-[#50616B] cursor-pointer text-[12px] md:hidden">Schedule</a>
                 <span >›</span>
                 <span class="text-primary font-inter text-[12px] ">New Appointment</span>
             </div>
             <h1 class="text-[25px] md:text-[30px] lg:text-[36px] font-bold font-inter text-textPrimary ">Schedule Appointment</h1>
             <p class="md:text-[14px]/24px lg:text-[16px]/[24px] font-inter text-[#50616B] ">Fill in the details to schedule a new appointment.</p>
+            <div class=" grid lg:grid-cols-2 grid-cols-1">
+                <div class="col pt-10">
+                    <section class="bg-white rounded-2xl px-6 pt-6.5 pb-6 shadow-[0_2px_4px_rgba(0,0,0,0.1)] border border-[#BEC8CD] col gap-4">
+                        <div class="flex items-center gap-1 md:gap-2 lg:gap-4 ">
+                            <img src="./assets/imgs/newAppointment/patientIdicon.svg" alt="Patient ID Icon" class="w-5 h-5">
+                            <h2 class="font-inter font-semibold text-[#0B1C30] text-[16px] md:text-[18px] lg:text-[20px]">Patient Identification</h2>
+                        </div>
+                        <div class="flex-between  w-full border border-[#6F787D] rounded-lg px-4.25 py-3.5 bg-[#f8f9ff] overflow-hidden">
+                            <input type="text" placeholder="patient name (e.g., Eleanor Vance)..." value=""class="text-[#6B7280] text-[10px] md:text-[12px] lg:text-[14px] font-inter bg-[#F8F9FF]"/>
+                            <span class=" bg-[#D3E5F1] text-[#566771] text-[10px] md:text-xs font-semibold px-2 py-1 rounded font-inter shrink-0">F1 Search</span>
+                        </div>
+
+                        <div class="flex-between rounded-xl p-2 md:p-4  bg-[#eff4ff]">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-full bg-pink-200 flex items-center justify-center text-pink-800 font-bold text-sm">EV</div>
+                                <div>
+                                    <div class="font-semibold font-inter text-[#0B1C30] text-[14px] md:text-[16px] lg:text-[18px]">Eleanor Vance</div>
+                                    <div class="text-[10px] md:text-xs font-inter text-[#3F484C]">ID: #ORD-99281 · Last visit: 3 months ago</div>
+                                </div>
+                            </div>
+                            <button class="text-[#005A71] font-inter text-[10px] md:text-xs font-semibold hover:underline ">Change Patient</button>
+                        </div>
+                    </section>
+
+                </div>
+                <div>
+                    dd
+
+                </div>
+
+            </div>
         </main>
 </div>
 
