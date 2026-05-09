@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="bg-bgPrimary md:overflow-hidden">
+<body class="bg-bgPrimary " >
 <div class="page-grid ">
     <header class=" page-header ">
             <div class="row md:gap-4 gap-1.5">
@@ -83,8 +83,8 @@
             </div>
             <h2 class="text-[25px] md:text-[30px] lg:text-[36px] font-bold font-inter text-textPrimary ">Schedule Appointment</h2>
             <p class="md:text-[14px]/24px lg:text-[16px]/[24px] font-inter text-[#50616B] ">Fill in the details to schedule a new appointment.</p>
-            <div class=" grid lg:grid-cols-2 grid-cols-1">
-                <div class="col pt-10 gap-6">
+            <div class="p-6 grid lg:grid-cols-[70%_30%] grid-cols-1">
+                <div class="col  gap-6">
                     <section class="form-section">
                         <div class="flex items-center gap-1 md:gap-2 lg:gap-4 ">
                             <img src="./assets/imgs/newAppointment/patientIdicon.svg" alt="Patient ID Icon" class="w-5 h-5">
@@ -187,6 +187,89 @@
                                 <span class="text-[10px] md:text-xs font-medium font-inter">Custom Procedure</span>
                             </div>
                         </div>
+                        
+                    </section>  
+                    <section class="form-section">
+                        <div class="flex-between">
+                        <div class="flex items-center gap-1 md:gap-2 lg:gap-4 ">
+                            <img src="./assets/imgs/newAppointment/schedulingicon.svg" alt="Treatment Icon" class="w-5 h-5">
+                            <h3 class="form-section-header">Scheduling & Availability</h3>
+                        </div>
+                        <div class="flex items-center gap-4 text-[10px] md:text-xs text-shadow-textPrimary font-inter font-medium">
+                            <span class="flex items-center gap-1.5">
+                                <span class="w-3 h-3 rounded-full bg-[#0E7490] inline-block"></span>
+                                Available
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <span class="w-3 h-3 rounded-full bg-[#D3E4FE] inline-block"></span>
+                                Booked
+                            </span>
+                        </div>
+                        </div>
+                        <div class="col md:row-between gap-2 ">
+                            <div class="col gap-2">
+                                    <p class="text-sm font-semibold text-[#3F484C] uppercase tracking-widest pb-4">Select Date</p>
+                                    <div class="grid grid-cols-7 gap-2 md:gap-1 lg:gap-0 text-center mb-2">
+                                        <span class="book-day">M</span>
+                                        <span class="book-day">T</span>
+                                        <span class="book-day">W</span>
+                                        <span class="book-day">T</span>
+                                        <span class="book-day">F</span>
+                                        <span class="book-day">S</span>
+                                        <span class="book-day">S</span>
+                                    </div>
+                                    <div class="grid grid-cols-7 gap-2 md:gap-1 lg:gap-0 text-center">
+                                        <div class="book-day-number">14</div>
+                                        <div class="book-day-number">15</div>
+                                        <div class="book-day-number text-white bg-[#005A71] shadow-sm">16</div>
+                                        <div class="book-day-number">17</div>
+                                        <div class="book-day-number">18</div>
+                                        <div class="book-day-number text-[#dadde0] cursor-not-allowed">19</div>          
+                                        <div class="book-day-number text-[#dadde0] cursor-not-allowed">20</div>
+                                    </div>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-[#3F484C] uppercase tracking-widest pb-2">Select Time</p>
+                                <div class="grid  grid-cols-3 gap-3 items-stretch>
+                                    <label class="block cursor-pointer">
+                                        <input type="radio" name="booking-time" class="peer hidden">
+                                        <div class="book-time h-full">
+                                            09:00 AM
+                                        </div>
+                                    </label>
+                                    <label class="block cursor-pointer">
+                                        <input type="radio" name="booking-time" class="peer hidden">
+                                        <div class="book-time h-full">
+                                            10:00 AM
+                                        </div>
+                                    </label>
+                                    <label class="block cursor-pointer">
+                                        <input type="radio" name="booking-time" class="peer hidden">
+                                        <div class="book-time h-full">
+                                            11:00 AM
+                                        </div>
+                                    </label>
+                                    <label class="block cursor-pointer">
+                                        <input type="radio" name="booking-time" class="peer hidden">
+                                        <div class="book-time h-full">
+                                            12:00 PM
+                                        </div>
+                                    </label>
+                                    
+                                    <label class="block cursor-not-allowed">
+                                        <input type="radio" name="booking-time" class="hidden" disabled>
+                                        <div class=" time-booked h-full">
+                                            01:00 PM
+                                        </div>
+                                    </label>
+                                    <label class="block cursor-pointer">
+                                        <input type="radio" name="booking-time" class="peer hidden">
+                                        <div class="book-time h-full">
+                                            02:00 PM
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
                         
                     </section>    
 
