@@ -346,3 +346,9 @@ body{
 @utility time-booked{
     @apply border-0 flex-center bg-[#D3E4FE] text-[#6F787D] cursor-not-allowed rounded-lg py-2 px-0.5 text-[12px]  font-inter;
 }
+@utility doctor-options-label{
+    @apply   flex items-center gap-3 border border-[#6F787D] rounded-xl p-2 cursor-pointer hover:border-[#005A71] hover:text-[#005A71] transition ;
+}
+@utility text-area-sp{
+    @apply w-full border border-[#6F787D] rounded-xl p-4 text-sm text-textPrimary bg-[#F8F9FF] resize-none placeholder-[#6B7280];
+}
