@@ -219,13 +219,48 @@
                                         <span class="book-day">S</span>
                                     </div>
                                     <div class="grid grid-cols-7 gap-2 md:gap-1 lg:gap-0 text-center">
-                                        <div class="book-day-number">14</div>
-                                        <div class="book-day-number">15</div>
-                                        <div class="book-day-number text-white bg-[#005A71] shadow-sm">16</div>
-                                        <div class="book-day-number">17</div>
-                                        <div class="book-day-number">18</div>
-                                        <div class="book-day-number text-[#dadde0] cursor-not-allowed">19</div>          
-                                        <div class="book-day-number text-[#dadde0] cursor-not-allowed">20</div>
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="booking-day" class="peer hidden">
+                                                <div class="book-day-number peer-checked:bg-[#005A71] peer-checked:text-white peer-checked:shadow-sm">
+                                                14
+                                                </div>
+                                        </label>
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="booking-day" class="peer hidden">
+                                            <div class="book-day-number peer-checked:bg-[#005A71] peer-checked:text-white peer-checked:shadow-sm">
+                                                15
+                                            </div>
+                                        </label>
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="booking-day" class="peer hidden" checked>
+                                            <div class="book-day-number peer-checked:bg-[#005A71] peer-checked:text-white peer-checked:shadow-sm">
+                                                16
+                                            </div>
+                                        </label>
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="booking-day" class="peer hidden">
+                                            <div class="book-day-number peer-checked:bg-[#005A71] peer-checked:text-white peer-checked:shadow-sm">
+                                                17
+                                            </div>
+                                        </label>
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="booking-day" class="peer hidden">
+                                            <div class="book-day-number peer-checked:bg-[#005A71] peer-checked:text-white peer-checked:shadow-sm">
+                                                18
+                                            </div>
+                                        </label>
+                                        <label class="cursor-not-allowed"> 
+                                            <input type="radio" name="booking-day" class="peer hidden" disabled>
+                                            <div class="book-day-number text-[#DADDE0]">
+                                                19
+                                            </div>
+                                        </label>
+                                        <label class="cursor-not-allowed">
+                                            <input type="radio" name="booking-day" class="peer hidden" disabled>
+                                            <div class="book-day-numbe text-[#DADDE0]">
+                                                20
+                                            </div>
+                                        </label>
                                     </div>
                             </div>
                             <div>
@@ -244,7 +279,7 @@
                                         </div>
                                     </label>
                                     <label class="block cursor-pointer">
-                                        <input type="radio" name="booking-time" class="peer hidden">
+                                        <input type="radio" name="booking-time" class="peer hidden" checked>
                                         <div class="book-time h-full">
                                             11:00 AM
                                         </div>

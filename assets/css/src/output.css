@@ -2298,6 +2298,9 @@
   .text-\[\#D3F1FF\] {
     color: #D3F1FF;
   }
+  .text-\[\#DADDE0\] {
+    color: #DADDE0;
+  }
   .text-\[\#DCFCE7\] {
     color: #DCFCE7;
   }
@@ -2450,6 +2453,11 @@
       border-color: #005A71;
     }
   }
+  .peer-checked\:bg-\[\#005A71\] {
+    &:is(:where(.peer):checked ~ *) {
+      background-color: #005A71;
+    }
+  }
   .peer-checked\:bg-white {
     &:is(:where(.peer):checked ~ *) {
       background-color: var(--color-white);
@@ -2458,6 +2466,17 @@
   .peer-checked\:text-\[\#1A1C1A\] {
     &:is(:where(.peer):checked ~ *) {
       color: #1A1C1A;
+    }
+  }
+  .peer-checked\:text-white {
+    &:is(:where(.peer):checked ~ *) {
+      color: var(--color-white);
+    }
+  }
+  .peer-checked\:shadow-sm {
+    &:is(:where(.peer):checked ~ *) {
+      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
   .peer-checked\/active\:bg-white {
