@@ -307,7 +307,30 @@ body{
 }
 @utility scroll-row {
     @apply flex overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-hide;
-  }
+}
 @utility filter-btn-native{
     @apply border px-6 py-2 rounded-full text-[14px] font-inter ;
+}
+
+/* new appointment */
+@utility form-section {
+    @apply bg-white rounded-2xl px-6 pt-6.5 pb-6 shadow-[0_2px_4px_rgba(0,0,0,0.1)] border border-[#BEC8CD] col gap-4;
+}
+@utility form-section-header {
+    @apply font-inter font-semibold text-[#0B1C30] text-[16px] md:text-[18px] lg:text-[20px];
+}
+@utility treatment-card {
+    @apply border border-[#6F787D] rounded-xl p-4 transition-colors duration-150 hover:border-[#005A71]/50 col gap-2 ;
+}
+@utility new-appointment-searchbar {
+    @apply text-[#6B7280] text-[10px] md:text-[12px] lg:text-[14px] font-inter bg-[#F8F9FF];
+}
+@utility new-appointment-btn-search {
+    @apply bg-[#D3E5F1] text-[#566771] text-[10px] md:text-xs font-semibold px-2 py-1 rounded font-inter shrink-0;
+}
+@utility treatment-title {
+    @apply font-semibold group-has-checked:text-[#005A71] text-textPrimary text-[16px] md:text-[18px] lg:text-[20px] font-inter overflow-hidden;
+}
+@utility treatment-info {
+    @apply text-[#3F484C] md:text-[12px] text-[10px] font-inter ;
 }

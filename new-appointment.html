@@ -81,31 +81,115 @@
                 <span >›</span>
                 <span class="text-primary font-inter text-[12px] ">New Appointment</span>
             </div>
-            <h1 class="text-[25px] md:text-[30px] lg:text-[36px] font-bold font-inter text-textPrimary ">Schedule Appointment</h1>
+            <h2 class="text-[25px] md:text-[30px] lg:text-[36px] font-bold font-inter text-textPrimary ">Schedule Appointment</h2>
             <p class="md:text-[14px]/24px lg:text-[16px]/[24px] font-inter text-[#50616B] ">Fill in the details to schedule a new appointment.</p>
             <div class=" grid lg:grid-cols-2 grid-cols-1">
-                <div class="col pt-10">
-                    <section class="bg-white rounded-2xl px-6 pt-6.5 pb-6 shadow-[0_2px_4px_rgba(0,0,0,0.1)] border border-[#BEC8CD] col gap-4">
+                <div class="col pt-10 gap-6">
+                    <section class="form-section">
                         <div class="flex items-center gap-1 md:gap-2 lg:gap-4 ">
                             <img src="./assets/imgs/newAppointment/patientIdicon.svg" alt="Patient ID Icon" class="w-5 h-5">
-                            <h2 class="font-inter font-semibold text-[#0B1C30] text-[16px] md:text-[18px] lg:text-[20px]">Patient Identification</h2>
+                            <h3 class="form-section-header">Patient Identification</h3>
                         </div>
                         <div class="flex-between  w-full border border-[#6F787D] rounded-lg px-4.25 py-3.5 bg-[#f8f9ff] overflow-hidden">
-                            <input type="text" placeholder="patient name (e.g., Eleanor Vance)..." value=""class="text-[#6B7280] text-[10px] md:text-[12px] lg:text-[14px] font-inter bg-[#F8F9FF]"/>
-                            <span class=" bg-[#D3E5F1] text-[#566771] text-[10px] md:text-xs font-semibold px-2 py-1 rounded font-inter shrink-0">F1 Search</span>
+                            <input type="text" placeholder="patient name (e.g., Eleanor Vance)..." value=""class="new-appointment-searchbar"/>
+                            <span class="new-appointment-btn-search">F1 Search</span>
                         </div>
 
                         <div class="flex-between rounded-xl p-2 md:p-4  bg-[#eff4ff]">
                             <div class="flex items-center gap-3">
-                                <div class="w-9 h-9 rounded-full bg-pink-200 flex items-center justify-center text-pink-800 font-bold text-sm">EV</div>
+                                <div class="patient-avatar bg-pink-200 text-pink-800 ">EV</div>
                                 <div>
-                                    <div class="font-semibold font-inter text-[#0B1C30] text-[14px] md:text-[16px] lg:text-[18px]">Eleanor Vance</div>
-                                    <div class="text-[10px] md:text-xs font-inter text-[#3F484C]">ID: #ORD-99281 · Last visit: 3 months ago</div>
+                                    <div class="patient-name">Eleanor Vance</div>
+                                    <div class="patient-id">ID: #ORD-99281 · Last visit: 3 months ago</div>
                                 </div>
                             </div>
                             <button class="text-[#005A71] font-inter text-[10px] md:text-xs font-semibold hover:underline ">Change Patient</button>
                         </div>
                     </section>
+                    <section class="form-section">
+                        <div class="flex items-center gap-1 md:gap-2 lg:gap-4 ">
+                            <img src="./assets/imgs/newAppointment/treatment-selectionicon.svg" alt="Treatment Icon" class="w-5 h-5">
+                            <h3 class="form-section-header">Treatment Selection</h3>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 items-stretch">
+                            <label class=" group cursor-pointer h-full">
+                                <input type="radio" name="treatment" class="peer hidden" checked>
+                                <div class="treatment-card peer-checked:border-[#005A71] h-full">
+                                    <div class="treatment-title">
+                                        Routine Cleaning
+                                    </div>
+                                    <div class="treatment-info">
+                                        45 mins · $120.00
+                                    </div>
+                                    <div class="w-5 h-5 bg-[#005A71] rounded-full  hidden group-has-checked:flex-center">
+                                        <i class="ti ti-check text-white text-sm"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class=" group cursor-pointer h-full">
+                                <input type="radio" name="treatment" class="peer hidden" >
+                                <div class="treatment-card peer-checked:border-[#005A71] h-full">
+                                    <div class="treatment-title">
+                                        Root Canal 
+                                    </div>
+                                    <div class="treatment-info">
+                                        90 mins · $850.00
+                                    </div>
+                                    <div class="w-5 h-5 bg-[#005A71] rounded-full  hidden group-has-checked:flex-center">
+                                        <i class="ti ti-check text-white text-sm"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class=" group cursor-pointer h-full">
+                                <input type="radio" name="treatment" class="peer hidden" >
+                                <div class="treatment-card peer-checked:border-[#005A71] h-full">
+                                    <div class="treatment-title">
+                                        Teeth Whitening
+                                    </div>
+                                    <div class="treatment-info">
+                                        60 mins · $120.00
+                                    </div>
+                                    <div class="w-5 h-5 bg-[#005A71] rounded-full  hidden group-has-checked:flex-center">
+                                        <i class="ti ti-check text-white text-sm"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class=" group cursor-pointer h-full">
+                                <input type="radio" name="treatment" class="peer hidden" >
+                                <div class="treatment-card peer-checked:border-[#005A71] h-full">
+                                    <div class="treatment-title">
+                                        Fillings
+                                    </div>
+                                    <div class="treatment-info">
+                                        45 mins · $200.00
+                                    </div>
+                                    <div class="w-5 h-5 bg-[#005A71] rounded-full  hidden group-has-checked:flex-center">
+                                        <i class="ti ti-check text-white text-sm"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class=" group cursor-pointer h-full">
+                                <input type="radio" name="treatment" class="peer hidden" >
+                                <div class="treatment-card peer-checked:border-[#005A71] h-full">
+                                    <div class="treatment-title">
+                                        Consultation
+                                    </div>
+                                    <div class="treatment-info">
+                                        30 mins · $85.00
+                                    </div>
+                                    <div class="w-5 h-5 bg-[#005A71] rounded-full  hidden group-has-checked:flex-center">
+                                        <i class="ti ti-check text-white text-sm"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="treatment-card flex flex-col items-center justify-center text-gray-400 gap-1">
+                                <img src="./assets/imgs/addIcon.svg" alt="Custom Procedure Icon" class="w-5 h-5">
+                                <span class="text-[10px] md:text-xs font-medium font-inter">Custom Procedure</span>
+                            </div>
+                        </div>
+                        
+                    </section>    
+
 
                 </div>
                 <div>
