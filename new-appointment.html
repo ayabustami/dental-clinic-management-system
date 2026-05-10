@@ -83,7 +83,7 @@
             </div>
             <h2 class="text-[25px] md:text-[30px] lg:text-[36px] font-bold font-inter text-textPrimary ">Schedule Appointment</h2>
             <p class="md:text-[14px]/24px lg:text-[16px]/[24px] font-inter text-[#50616B] ">Fill in the details to schedule a new appointment.</p>
-            <div class="pt-6 md:p-6 grid lg:grid-cols-[70%_30%] grid-cols-1">
+            <div class="pt-6 md:p-6 grid lg:grid-cols-[70%_30%] grid-cols-1 lg:gap-10 gap-6">
                 <div class="col  gap-6">
                     <section class="form-section">
                         <div class="flex items-center gap-1 md:gap-2 lg:gap-4 ">
@@ -347,14 +347,64 @@
                             <textarea rows="5" placeholder="Specific requests, allergy alerts, or preparation requirements..." class="text-area-sp"></textarea>
                         </section>
                     </div>    
-
-
                 </div>
-                <div>
-                    dd
+                <div class="col gap-6 pb-10">
+                    <div class="bg-[#0F1C30] rounded-2xl font-inter text-white col gap-4  p-6">
+                        <h2 class="text-[24px] font-semibold leading-tight ">Appointment Summary</h2>
+                        <div class="flex items-start gap-3 ">
+                            <img class="w-4 h-4 shrink-0" src="./assets/imgs/newAppointment/app-sum-1.svg" alt="Date & Time Icon">
+                            <div class="col gap-0.5">
+                                <p class="text-xs font-semibold text-[#B9EAFF] uppercase tracking-widest  ">Date & Time</p>
+                                <p class="text-sm font-bold leading-snug">Wednesday, Oct 16, 2024</p>
+                                <p class="text-xs ">11:00 AM - 11:45 AM</p>
+                            </div>
+                        </div>
 
+                        <div class="flex items-start gap-3 ">
+                            <img class="w-4 h-4 mt-0.5 shrink-0" src="./assets/imgs/newAppointment/app-sum-2.svg" alt="Procedure Icon">
+                            <div class="col gap-0.5">
+                                <p class="text-[12px] font-semibold text-[#B9EAFF] uppercase tracking-widest  ">Procedure</p>
+                                <p class="text-sm font-bold leading-snug">Routine Cleaning</p>
+                                <p class="text-xs ">Duration: 45 Minutes</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3  ">
+                            <img class="w-4 h-4 mt-0.5 shrink-0" src="./assets/imgs/newAppointment/app-sum-3.svg" alt="Assigned To Icon">
+                            <div class="col gap-0.5">
+                                <p class="text-[12px] font-semibold text-[#B9EAFF] uppercase tracking-widest  ">Assigned To</p>
+                                <p class="text-sm font-bold leading-snug">Dr. Julian Smith</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/10 "></div>
+
+                        <div class="col gap-4">
+                            <p class="text-[12px] font-semibold text-[#B9EAFF] uppercase tracking-widest ">Estimated Cost</p>
+                            <div class="flex items-center gap-2">
+                                <span class="text-3xl font-extrabold tracking-tight">$120.00</span>
+                                <span class="bg-[#0E7490] text-white text-[12px] font-semibold px-8 py-2 rounded-full leading-tight text-center">Insurance Eligible</span>
+                            </div>
+                        </div>
+
+                        <button class="w-full bg-white text-[#0F1C30] text-[20px] font-semibold font-inter  py-4 px-2.5 rounded-xl hover:bg-[#DCE9FF] transition  ">
+                        Schedule Appointment
+                        </button>
+
+                        <button class="w-full text-white text-[14px] font-medium hover:text-[#DCE9FF] transition py-1">
+                        Cancel & Discard 
+                        </button>
+                    </div>
+                    <div class="bg-[#DCE9FF] border border-[#BEC8CD] rounded-2xl p-4 text-[#3F484C] font-inter text-xs ">
+                        <div class="flex items-center gap-2  ">
+                            <img class="w-4 h-4  shrink-0" src="./assets/imgs/newAppointment/policyIcon.svg" alt="Policy Note Icon">
+                            <span class="font-semibold uppercase tracking-widest">Policy Note</span>
+                        </div>
+                        <p class=" leading-relaxed px-4 py-6">
+                        Changes to this appointment must be made at least 24 hours in advance to avoid a cancellation fee. Patient will receive a confirmation via SMS and Email.
+                        </p>
+                    </div>
                 </div>
-
             </div>
         </main>
 </div>
