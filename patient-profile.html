@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/src/output.css" rel="stylesheet">
+    <link rel="icon" href="./assets/imgs/appIcon.svg" type="image/svg+xml">
+    <title>Patiens - Denti Clinics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-bgPrimary ">
+<div class="page-grid ">
+    <header class=" page-header ">
+            <div class="row md:gap-4 gap-1.5">
+                <div class="logo-container">
+                <img class="logo-icon " src="./assets/imgs/LogoIcon.svg" alt="Logo">
+                </div> 
+                <h1 class="font-manrope text-[18px] font-bold stroke-[#E2E8F0] flex-center">Denti Clinics</h1>
+            </div>
+            <div class="search-bar">
+                <img src="./assets/imgs/searchIcon.svg" alt="Search Icon" class="w-4 h-4">    
+                <input class="flex-1 outline-none bg-transparent font-manrope text-[14px]" placeholder="Search patient or record..." />
+            </div>
+            <div class="row lg:gap-6.5 gap-4">
+                <div class="row md:gap-4 items-center justify-center">
+                    <button type="button" aria-label="Notifications" class="icon-btn ">
+                        <img src="./assets/imgs/alertIcon.svg" alt="Notification Icon" class="w-5 h-5 ">
+                    </button>
+                    <button type="button" aria-label="Help information" class="icon-btn ">
+                        <img src="./assets/imgs/infoIcon.svg" alt="Info Icon" class="w-5 h-5 hidden lg:flex">
+                    </button>
+                </div>
+            <div>
+                <button type="button" aria-label="Profile" class="icon-btn ">
+                    <img src="./assets/imgs/profileIcon.svg" alt="Profile Icon" class="w-8 h-8 rounded-full">
+                </button>
+            </div>
+            </div>    
+        </header>
+
+    <aside class="page-asidebar ">
+            <nav class="main-nav ">
+                <a href="./index.html" class="nav-unselected">
+                    <img src="./assets/imgs/nav_icons/dashboard.svg" alt="Dashboard Icon" class="lg:pt-0 nav-icon ">
+                    <span class="nav-label-unselected">Dashboard</span>
+                </a>
+                <a href="./patients.html" class="nav-selected">
+                    <img src="./assets/imgs/nav_icons/patiensSelected.svg" alt="Patients Icon" class="nav-icon">
+                    <span class="nav-label-selected ">Patients</span>
+                </a>
+                <a href="./schedule.html" class="nav-unselected hidden md:flex">
+                    <img src="./assets/imgs/nav_icons/schedule.svg" alt="Schedule Icon" class="nav-icon">
+                    <span class="nav-label-unselected ">Schedule</span>
+                </a>
+                <a href="./schedule-native.html" class="nav-unselected md:hidden">
+                    <img src="./assets/imgs/nav_icons/schedule.svg" alt="Schedule Icon" class="nav-icon">
+                    <span class="nav-label-unselected ">Schedule</span>
+                </a>
+                <a href="./setting.html" class=" nav-unselected">
+                    <img src="./assets/imgs/nav_icons/settings.svg" alt="Settings Icon" class="nav-icon">
+                    <span class="nav-label-unselected ">Settings</span>
+                </a>
+            </nav>
+            <nav class="bottom-nav">
+                <a href="./help.html" class="bottom-nav-link">
+                    <img src="./assets/imgs/nav_icons/help.svg" alt="Help Icon" class="nav-icon">
+                    <span class="nav-label-unselected  ">Help</span>
+                </a>
+                <a href="./login.html" class="bottom-nav-link">
+                    <img src="./assets/imgs/nav_icons/signout.svg" alt="Logout Icon" class="nav-icon">
+                    <span class="nav-label-unselected ">Logout</span>
+                </a>
+            </nav>
+        </aside>
+        <main class=" bg-[#FAF9F6] ">
+            <div class=" ">
+                <div class="lg:row-between  col gap-4  p-4 lg:p-8">
+                    <div class="flex items-center gap-4">
+                        <div class="lg:w-32 lg:h-32 h-16 w-16   bg-blue-100 text-blue-700 md:text-[38px] text-[14px] patient-avatar">
+                                JD
+                        </div>
+                        <div class="col gap-2">
+                            <div class="flex items-center gap-2 ">
+                                <span class="text-[12px] font-inter text-forgot bg-[#D7E0F5] px-2 py-0.5 rounded-2xl ">PATIENT ID: #77421</span>
+                                <span class="text-[14px] font-inter text-menuMuted font-medium">Joined Oct 2023</span>
+                            </div>
+                            <h1 class="lg:text-[36px] md:text-[24px] text-[24px] font-bold font-inter text-shadow-textPrimary leading-tight">John Doe</h1>
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class=" font-inter text-[12px] font-semibold text-textMuted bg-textMuted/10  px-3 py-1 rounded-full">
+                                    Premium Plan
+                                </span>
+                                <span class="  font-inter text-[12px] font-semibold text-[#93000A] bg-[#FFDAD6]  px-3 py-1 rounded-full">
+                                Medical Alert
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid lg:grid-cols-2 grid-cols-[30%_30%] items-center gap-2">
+                        <button class=" rounded-2xl font-inter text-[12px] md:text-[14px] lg:px-6 lg:py-3 px-5 py-2 bg-[#E9E8E5] text-gray-800 hover:bg-[#E9E8E5]/80 font-medium" >
+                            Export PDF
+                        </button>
+                        <button class=" rounded-2xl font-inter bg-primary text-white text-[12px] md:text-[14px] lg:px-6 md:py-3 px-5 py-2  hover:bg-primary/80 font-medium" >
+                            Schedule Procedure
+                        </button>
+      </div>
+    </div>
+  </div>
+
+   
+        </main>
+
+    
+</div>
+
+</body>
+</html>
