@@ -54,9 +54,13 @@
                     <img src="./assets/imgs/nav_icons/patiens.svg" alt="Patients Icon" class="nav-icon">
                     <span class="nav-label-unselected ">Patients</span>
                 </a>
-                <a href="./schedule.html" class="nav-selected">
-                    <img src="./assets/imgs/nav_icons/scheduleSelected.svg" alt="Schedule Icon" class="nav-icon">
-                    <span class="nav-label-selected ">Schedule</span>
+                <a href="./schedule.html" class="nav-unselected hidden md:flex">
+                    <img src="./assets/imgs/nav_icons/schedule.svg" alt="Schedule Icon" class="nav-icon">
+                    <span class="nav-label-unselected ">Schedule</span>
+                </a>
+                <a href="./schedule-native.html" class="nav-unselected md:hidden">
+                    <img src="./assets/imgs/nav_icons/schedule.svg" alt="Schedule Icon" class="nav-icon">
+                    <span class="nav-label-unselected ">Schedule</span>
                 </a>
                 <a href="./setting.html" class=" nav-unselected">
                     <img src="./assets/imgs/nav_icons/settings.svg" alt="Settings Icon" class="nav-icon">
@@ -206,7 +210,7 @@
                             </span>
                         </div>
                         </div>
-                        <div class="col md:row-between gap-2 ">
+                        <div class="col md:grid md:grid-cols-[50%_50%] gap-2 ">
                             <div class="col gap-2">
                                     <p class="text-sm font-semibold text-[#3F484C] uppercase tracking-widest pb-4">Select Date</p>
                                     <div class="grid grid-cols-7 gap-2 md:gap-1 lg:gap-0 text-center mb-2">
@@ -257,7 +261,7 @@
                                         </label>
                                         <label class="cursor-not-allowed">
                                             <input type="radio" name="booking-day" class="peer hidden" disabled>
-                                            <div class="book-day-numbe text-[#DADDE0]">
+                                            <div class="book-day-number text-[#DADDE0]">
                                                 20
                                             </div>
                                         </label>

@@ -3045,6 +3045,31 @@
       grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr auto;
     }
   }
+  .md\:grid-cols-\[50\%-50\%\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 50%-50%;
+    }
+  }
+  .md\:grid-cols-\[50\%-50\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 50%-50;
+    }
+  }
+  .md\:grid-cols-\[50\%-\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 50%-;
+    }
+  }
+  .md\:grid-cols-\[50\%_50\%\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 50% 50%;
+    }
+  }
+  .md\:grid-cols-\[50\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 50;
+    }
+  }
   .md\:grid-cols-\[repeat\(3\,200px\)\] {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3,200px);
