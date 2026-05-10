@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
 </head>
 
 <body class="bg-bgPrimary ">
@@ -76,19 +78,24 @@
                 </a>
             </nav>
         </aside>
-        <main class=" bg-[#FAF9F6] ">
-            <div class=" ">
-                <div class="lg:row-between  col gap-4  p-4 lg:p-8">
+    <main class="p-6 md:p-7.5 lg:p-10 bg-[#FAF9F6] col gap-6 ">
+            <div class="font-medium tracking-wide uppercase flex items-center gap-1 ">
+                <a href="./patients.html"  class="font-inter hover:text-primary text-[#50616B] cursor-pointer text-[12px] ">Patients</a>
+                <span >›</span>
+                <span class="text-primary font-inter text-[12px] uppercase ">patient profile</span>
+            </div>
+            <div>
+                <div class="lg:row-between  col gap-4  p-4 lg:p-8 pl-0 ">
                     <div class="flex items-center gap-4">
                         <div class="lg:w-32 lg:h-32 h-16 w-16   bg-blue-100 text-blue-700 md:text-[38px] text-[14px] patient-avatar">
-                                JD
+                                ES
                         </div>
                         <div class="col gap-2">
                             <div class="flex items-center gap-2 ">
                                 <span class="text-[12px] font-inter text-forgot bg-[#D7E0F5] px-2 py-0.5 rounded-2xl ">PATIENT ID: #77421</span>
                                 <span class="text-[14px] font-inter text-menuMuted font-medium">Joined Oct 2023</span>
                             </div>
-                            <h1 class="lg:text-[36px] md:text-[24px] text-[24px] font-bold font-inter text-shadow-textPrimary leading-tight">John Doe</h1>
+                            <h1 class="lg:text-[36px] md:text-[24px] text-[24px] font-bold font-inter text-shadow-textPrimary leading-tight">Eleanor Shellstrop</h1>
                             <div class="flex items-center gap-2 mt-1">
                                 <span class=" font-inter text-[12px] font-semibold text-textMuted bg-textMuted/10  px-3 py-1 rounded-full">
                                     Premium Plan
@@ -106,11 +113,120 @@
                         <button class=" rounded-2xl font-inter bg-primary text-white text-[12px] md:text-[14px] lg:px-6 md:py-3 px-5 py-2  hover:bg-primary/80 font-medium" >
                             Schedule Procedure
                         </button>
-      </div>
+                    </div>
     </div>
-  </div>
+            </div>
+            <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-[30%_70%] gap-4  ">
+                <div class=" form-section">
+                    <div class="form-section-header">
+                        <h3 >Patient Info</h3>
+                    </div>
+                    <div class="col gap-6">
+                        <div class="flex items-start gap-3">
+                            <img src="./assets/imgs/patient-profile/emailIcon.svg" alt="Info Icon" class="w-4 h-4">
+                            <div>
+                                <p class="text-[9px] font-bold text-textMuted uppercase tracking-widest mb-0.5">Email Address</p>
+                                <p class="text-xs font-medium text-shadow-textPrimary">john.doe@example.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <img src="./assets/imgs/patient-profile/phoneIcon.svg" alt="Info Icon" class="w-4 h-4">
+                            <div>
+                                <p class="text-[9px] font-bold text-textMuted uppercase tracking-widest mb-0.5">Phone</p>
+                                <p class="text-xs font-medium text-shadow-textPrimary">+1 (555) 092-3341</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                        <img src="./assets/imgs/patient-profile/bloodIcon.svg" alt="Info Icon" class="w-4 h-4">
+                        <div>
+                            <p class="text-[9px] font-bold text-textMuted uppercase tracking-widest mb-0.5">Blood Type</p>
+                            <p class="text-xs font-semibold text-[#BA1A1A]">O Positive (O+)</p>
+                        </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <img src="./assets/imgs/patient-profile/birthIcon.svg" alt="Info Icon" class="w-4 h-4">
+                            <div>
+                                <p class="text-[9px] font-bold text-textMuted uppercase tracking-widest mb-0.5">Date of Birth</p>
+                                <p class="text-xs font-medium text-shadow-textPrimary">May 14, 1982 <span class="text-shadow-textPrimary">(41 yrs)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-   
+                <div class="form-section col">
+                    <div class="flex-between mb-3">
+                        <h3 class="form-section-header">Clinical Notes</h3>
+                        <span class="text-[10px] text-menuMuted">Last saved: 10 mins ago</span>
+                    </div>
+                    <textarea rows="6" placeholder="Start typing clinical observations or patient history notes..."class="flex-1 w-full rounded-xl px-4 py-3 text-[14px] font-inter text-textPrimary bg-[#F4F3F1]/50 resize-none placeholder-muted font-italic "></textarea>
+                    <div class="flex justify-end mt-3">
+                        <button class="text-primary text-xs font-semibold hover:underline">+ Add Log Entry</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[30%_70%] gap-4   ">
+            <div class="form-section bg-[#FFF8F8] stroke-[#BA1A1A]/10">
+                <div class="flex items-center gap-2  ">
+                    <img src="./assets/imgs/patient-profile/critical-alert-icon.svg" alt="Alert Icon" class="w-4 h-4">
+                    <h3 class="form-section-header text-[#BA1A1A] font-manrope">Critical Alerts</h3>
+                </div>
+                <div class="rounded-xl p-8 bg-white">
+                    <p class="text-[12px] font-semibold font-manrope text-[#BA1A1A] uppercase tracking-widest mb-1">Drug Allergies</p>
+                    <p class="text-sm font-medium font-inter text-textPrimary">Penicillin-Severe Reaction</p>
+                </div>
+            </div>
+
+            <div class="bg-[#f4f3f1] form-section">
+                <h3 class="form-section-header">Clinical Timeline</h3>
+                <div class="col  ">
+                    <div class="flex gap-3">
+                        <div class="col items-center">
+                            <div class="w-5 h-5 rounded-full bg-textPrimary flex-center">
+                                <i class="ti ti-check text-white text-sm"></i>
+                            </div>
+                            <div class="w-px flex-1 bg-[#74777F] pb-4"></div>
+                        </div>
+                        <div class="flex-1 pb-2">
+                            <div class="flex-between mb-0.5">
+                                <p class="text-sm font-manrope font-bold text-shadow-textPrimary">Routine Check-up & Prophylaxis</p>
+                                <span class="text-xs font-manrope font-bold text-shadow-textPrimary">Jan 12, 2024</span>
+                            </div>
+                            <div class="flex-between gap-2 mb-1.5">
+                                <span class="text-[12px] font-inter text-menuMuted">Dr. Sarah Miller · Suite 4B</span>
+                                <span class="bg-[#D7E0F5] text-menuMuted text-[12px] px-2 py-0.5 rounded-full">Completed</span>
+                            </div>
+                            <p class="text-[12px] font-inter text-textMuted pb-4">Patient presented for a standard 6-month cleaning. General oral health is excellent. Noted minor sensitivity on lower left molar. Application of Fluoride varnish completed.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="col items-center">
+                            <div class="w-5 h-5 rounded-full bg-gray-200 flex-center">
+                                <i class="ti ti-circle-filled text-gray-500 text-[8px]"></i>
+                            </div>
+                            <div class="w-px flex-1 bg-[#74777F]"></div>
+                        </div>
+                        <div class="flex-1 pb-2">
+                            <div class="flex-between mb-0.5">
+                                <p class="text-sm font-manrope font-bold text-shadow-textPrimary">Emergency Consultation</p>
+                                <span class="text-xs font-manrope font-bold text-shadow-textPrimary">Nov 08, 2023</span>
+                            </div>
+                            <div class="flex-between gap-2 mb-1.5">
+                                <span class="text-[12px] font-inter text-menuMuted">On-call Specialist</span>
+                                <span class="bg-[#C4C6CF] text-menuMuted text-[12px] px-2 py-0.5 rounded-full">Archived</span>
+                            </div>
+                            <p class="text-[12px] font-inter text-textMuted">Acute localized pain in upper right quadrant. No visible abscess. Referred for specialized imaging (Panoramic scan).</p>
+                        </div>
+                    </div>
+
+
+          
+
+        </div>
+      </div>
+
+            </div>
+
         </main>
 
     
