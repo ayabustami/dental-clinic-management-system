@@ -79,9 +79,9 @@
             </nav>
         </aside>
 
-    <main class="p-6 md:p-7.5 lg:p-10">
+    <main class="p-6 md:p-7.5 lg:p-10 pb-20">
         <div class="col gap-10">
-            <div class="flex items-center gap-1 text-xs text-gray-400 font-medium mb-2">
+            <div class="flex items-center gap-1 text-xs text-[#3F484C] font-medium mb-2">
               <a href="./patient-profile.html" class="font-inter hover:text-primary text-[#50616B] cursor-pointer text-[12px]">Patient Profile</a>
               <span>/</span>
               <span class="text-primary font-inter text-[12px] ">New Request</span>
@@ -101,7 +101,7 @@
                 </button>
               </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-[38%_1fr] ">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-[38%_1fr] ">
               <div class="col gap-6">
                 <div class="form-section">
                   <h2 class="form-section-header ">Patient Details</h2>
@@ -142,10 +142,78 @@
                     </div>
                 </div>
               </div>
+              <div class="col gap-6">
+                <div class="flex flex-col gap-4">
+                  <div class="form-section">
+                    <h2 class="form-section-header">Select Scan Type</h2>
+
+                    <div class="grid grid-flow-col auto-cols-[minmax(200px,1fr)] md:grid-flow-row md:grid-cols-2 lg:grid-cols-3 gap-3 overflow-x-auto scrollbar-hide">
+                      <label class=" col gap-2 relative  cursor-pointer" >
+                          <input type="radio" name="scanType" class="peer sr-only" checked>
+                          <div class="absolute top-3 right-3 w-5 z-10 h-5 bg-primary rounded-full items-center justify-center hidden  peer-checked:flex">
+                            <i class="ti ti-check text-white text-[10px]"></i>
+                          </div>
+                          <div class="  col gap-2 border-2 border-[#E5EEFF] rounded-xl p-4 cursor-pointer peer-checked:border-primary peer-checked:bg-[#EFF4FF] bg-white/40">
+                          <img src="./assets/imgs/scanPage/panoramic-icon.svg" alt="Panoramic Scan Icon" class="w-5.5 h-5.5 "> 
+                          <p class="font-bold font-inter text-textPrimary text-[16px] ">Panoramic</p>
+                          <p class="text-[12px] text-[#3F484C] leading-snug">Full jaw perspective and dental arch overview.</p>
+                        </div>
+                      </label>
+                      <label class=" col gap-2 relative  cursor-pointer">
+                          <input type="radio" name="scanType" class="peer sr-only">
+                          <div class="absolute top-3 right-3 w-5 z-10 h-5 bg-primary rounded-full items-center justify-center hidden  peer-checked:flex">
+                            <i class="ti ti-check text-white text-[10px]"></i>
+                          </div>
+                          <div class="  col gap-2 border-2 border-[#E5EEFF] rounded-xl p-4 cursor-pointer peer-checked:border-primary peer-checked:bg-[#EFF4FF] bg-white/40">
+                          <img src="./assets/imgs/scanPage/bitewing-icon.svg" alt="Bitewing Scan Icon" class="w-5.5 h-5.5 "> 
+                          <p class="font-bold font-inter text-textPrimary text-[16px] ">Bitewing</p>
+                          <p class="text-[12px] text-[#3F484C] leading-snug">Detailed view of crowns and interproximal areas.</p>
+                        </div>
+                      </label>
+                      <label class=" col gap-2 relative  cursor-pointer">
+                          <input type="radio" name="scanType" class="peer sr-only">
+                          <div class="absolute top-3 right-3 w-5 z-10 h-5 bg-primary rounded-full items-center justify-center hidden  peer-checked:flex">
+                            <i class="ti ti-check text-white text-[10px]"></i>
+                          </div>
+                          <div class="  col gap-2 border-2 border-[#E5EEFF] rounded-xl p-4 cursor-pointer peer-checked:border-primary peer-checked:bg-[#EFF4FF] bg-white/40">
+                          <img src="./assets/imgs/scanPage/ct-cbct-icon.svg" alt="CT / CBCT Scan Icon" class="w-5.5 h-5.5 "> 
+                          <p class="font-bold font-inter text-textPrimary text-[16px] ">CT / CBCT</p>
+                          <p class="text-[12px] text-[#3F484C] leading-snug">3D volumetric imaging for surgical planning.</p>
+                        </div>
+                      </label>
+                    </div>
+
+                  </div>
+                  <div class="form-section col gap-4">
+                    <div class="flex-between ">
+                      <h2 class="form-section-header">Priority Status</h2>
+                      <div class="flex-center border bg-[#EFF4FF] border-[#BEC8CD] rounded-full p-1  ">
+                        <button class="px-4 py-1 rounded-full text-xs font-bold font-inter bg-white text-textPrimary  ">Routine</button>
+                        <button class="px-4 py-1 rounded-full text-xs font-bold font-inter text-textMuted hover:bg-white transition">Urgent</button>
+                        <button class="px-4 py-1 rounded-full text-xs font-bold font-inter text-textMuted hover:bg-white transition">STAT</button>
+                      </div>
+                    </div>
+
+                    <p class="text-[12px] tracking-[.05px] font-semibold  font-inter text-textMuted uppercase">Clinical Reasoning & Notes</p>
+                    <textarea rows="4" placeholder="Describe the reason for the scan, specific teeth of interest, or relevant medical history..." class="w-full border border-gray-100 bg-[#EFF4FF] rounded-xl p-6 text-xs font-inter text-textPrimary  placeholder-menuMuted"></textarea>
+                    
+                    <div class="border border-[#D3E5F1] rounded-2xl p-4 shadow-sm bg-[#D3E5F1]/30 flex-between">
+                      <div class="flex items-center gap-4"> 
+                        <i class="ti ti-cloud-upload text-textMuted text-[23px]"></i>
+                        <div>
+                          <p class="text-sm font-inter font-bold text-textMuted">Attach Previous Files</p>
+                          <p class="text-[12px] font-inter text-menuMuted mt-0.5">Drag and drop any relevant PDFs or DICOM images (Max 50MB).</p>
+                        </div>
+                        </div>
+                        <button class="shrink-0 border border-[#BEC8CD] text-textPrimary text-xs font-semibold px-4 py-2 rounded-xl hover:bg-[#BEC8CD]/50 transition">
+                          Browse
+                        </button>
+                    </div>
+                  </div>
+                </div>      
+                </div>
             </div>
-        </div>
-                
-      
+        </div>     
     </main>
 </div>
 
