@@ -42,7 +42,7 @@
                 </button>
             </div>
             </div>    
-        </header>
+    </header>
 
     <aside class="page-asidebar ">
             <nav class="main-nav ">
@@ -77,13 +77,14 @@
                     <span class="nav-label-unselected ">Logout</span>
                 </a>
             </nav>
-        </aside>
+    </aside>
     <main class="p-6 pb-20 md:p-7.5 lg:p-10 bg-[#FAF9F6] col gap-6 ">
             <div class="font-medium tracking-wide uppercase flex items-center gap-1 ">
                 <a href="./patient-profile.html"  class="font-inter hover:text-primary text-[#50616B] cursor-pointer text-[12px] ">Patient Profile</a>
                 <span >›</span>
                 <span class="text-primary font-inter text-[12px] uppercase ">patient radiology</span>
             </div>
+
             <div>
                 <div class="lg:row-between  col gap-4  p-4 lg:p-8 pl-0 ">
                     <div class="flex items-center gap-4">
@@ -120,92 +121,132 @@
                 </div>
 
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-[20%_40%_40%] gap-6">
-                <div class="col gap-6">
-                    <di class="form-section">
-                        <div class="col gap-4">
-                            <div class="flex-between">
-                            <p class="form-section-header">Imaging Orders</p>
-                            <img src="./assets/imgs/patientsPageIcon/filtericon.svg" alt="Alert Icon" class="w-4 h-4 inline-block ml-1">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[22%_38%_1fr] gap-6">
 
-                            </div>
-                            <div class="col gap-2 md:pb-20 ">
-                                <label class=" col gap-2 group  cursor-pointer" >
-                                <input type="radio" name="selectImage" class="peer sr-only" checked> 
-                                    <div class=" p-4 peer-checked:border-l-4 peer-checked:border-primary peer-checked:bg-[#EFF4FF] transition" >
-                                        <p class="font-inter font-bold text-textPrimary group-has-checked:text-primary text-xs ">CBCT · Full Mandible</p>
-                                        <p class="font-inter text-textMuted text-xs pt-1">Ref: Dr. Sarah Low</p>
-                                        <p class="font-inter text-textMuted text-xs pb-2">Oct 24, 2023 • 09:15 AM</p>
-                                        <span class="font-inter font-bold bg-[#DCFCE7] text-[#166534] text-[10px] px-2 py-0.5 rounded-xl hidden group-has-checked:block w-20">PROCESSED</span>
-                                    </div>
-                                </label>
-                                <label class=" col gap-2 group  cursor-pointer" >
-                                <input type="radio" name="selectImage" class="peer sr-only" >
-                                    <div class=" p-4 peer-checked:border-l-4 peer-checked:border-primary peer-checked:bg-[#EFF4FF] transition" >
-                                        <p class="font-inter font-bold text-textPrimary group-has-checked:text-primary text-xs ">Panoramic (OPG)</p>
-                                        <p class="font-inter text-textMuted text-xs pt-1">Ref: Internal</p>
-                                        <p class="font-inter text-textMuted text-xs pb-2">Sep 15, 2023</p>
-                                        <span class="font-inter font-bold bg-[#DCFCE7] text-[#166534] text-[10px] px-2 py-0.5 rounded-xl hidden group-has-checked:block w-20">PROCESSED</span>
-                                    </div>
-                                </label>
-                                <label class=" col gap-2 group  cursor-pointer" >
-                                <input type="radio" name="selectImage" class="peer sr-only" >
-                                    <div class=" p-4 peer-checked:border-l-4 peer-checked:border-primary peer-checked:bg-[#EFF4FF] transition" >
-                                        <p class="font-inter font-bold text-textPrimary group-has-checked:text-primary text-xs ">Periapical - Tooth #14</p>
-                                        <p class="font-inter text-textMuted text-xs pt-1">Ref: Internal</p>
-                                        <p class="font-inter text-textMuted text-xs pb-2">Aug 02, 2023</p>
-                                        <span class="font-inter font-bold bg-[#DCFCE7] text-[#166534] text-[10px] px-2 py-0.5 rounded-xl hidden group-has-checked:block w-20">PROCESSED</span>
-                                    </div>
-                                </label>
-                            </div>
-                            
-                        </div>
-                    </di>
+                <div class="col gap-6">
                     <div class="form-section">
-                        <p class="form-section-header">Diagnostic Integrity</p>
+                    <div class="col gap-4">
                         <div class="flex-between">
-                            <span class="font-inter text-textMuted text-xs">Bone Density Index</span>
-                            <div class="col">
-                                <span class="font-inter font-bold text-[#16A34A] text-xs ">High</span>
-                                <span class="font-inter font-bold text-[#16A34A] text-xs items-right">(74.2)</span>
+                        <p class="form-section-header">Imaging Orders</p>
+                        <img src="./assets/imgs/patientsPageIcon/filtericon.svg" alt="filter" class="w-4 h-4 inline-block ml-1">
+                        </div>
+                        <div class="col gap-2">
+                        <label class="col gap-2 group cursor-pointer">
+                            <input type="radio" name="selectImage" class="peer sr-only" checked>
+                            <div class="p-4 peer-checked:border-l-4 peer-checked:border-primary peer-checked:bg-[#EFF4FF] transition">
+                            <p class="font-inter font-bold text-textPrimary group-has-checked:text-primary text-xs">CBCT · Full Mandible</p>
+                            <p class="font-inter text-textMuted text-xs pt-1">Ref: Dr. Sarah Low</p>
+                            <p class="font-inter text-textMuted text-xs pb-2">Oct 24, 2023 • 09:15 AM</p>
+                            <span class="font-inter font-bold bg-[#DCFCE7] text-[#166534] text-[10px] px-2 py-0.5 rounded-xl hidden group-has-checked:block w-20">PROCESSED</span>
+                            </div>
+                        </label>
+                        <label class="col gap-2 group cursor-pointer">
+                            <input type="radio" name="selectImage" class="peer sr-only">
+                            <div class="p-4 peer-checked:border-l-4 peer-checked:border-primary peer-checked:bg-[#EFF4FF] transition">
+                            <p class="font-inter font-bold text-textPrimary group-has-checked:text-primary text-xs">Panoramic (OPG)</p>
+                            <p class="font-inter text-textMuted text-xs pt-1">Ref: Internal</p>
+                            <p class="font-inter text-textMuted text-xs pb-2">Sep 15, 2023</p>
+                            <span class="font-inter font-bold bg-[#DCFCE7] text-[#166534] text-[10px] px-2 py-0.5 rounded-xl hidden group-has-checked:block w-20">PROCESSED</span>
+                            </div>
+                        </label>
+                        <label class="col gap-2 group cursor-pointer">
+                            <input type="radio" name="selectImage" class="peer sr-only">
+                            <div class="p-4 peer-checked:border-l-4 peer-checked:border-primary peer-checked:bg-[#EFF4FF] transition">
+                            <p class="font-inter font-bold text-textPrimary group-has-checked:text-primary text-xs">Periapical - Tooth #14</p>
+                            <p class="font-inter text-textMuted text-xs pt-1">Ref: Internal</p>
+                            <p class="font-inter text-textMuted text-xs pb-2">Aug 02, 2023</p>
+                            <span class="font-inter font-bold bg-[#DCFCE7] text-[#166534] text-[10px] px-2 py-0.5 rounded-xl hidden group-has-checked:block w-20">PROCESSED</span>
+                            </div>
+                        </label>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="form-section">
+                    <p class="form-section-header">Diagnostic Integrity</p>
+                    <div class="flex-between">
+                        <span class="font-inter text-textMuted text-xs">Bone Density Index</span>
+                        <div class="col">
+                        <span class="font-inter font-bold text-[#16A34A] text-xs">High</span>
+                        <span class="font-inter font-bold text-[#16A34A] text-xs">(74.2)</span>
+                        </div>
+                    </div>
+                    <progress class="custom-progress" value="74.2" max="100">74.2%</progress>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="form-section p-0 gap-0 ">
+                        <div class="flex-between p-4 bg-primary rounded-t-lg">
+                            <div class="flex items-center xl:gap-4 gap-2">
+                                <button class="xl:p-3 p-2 rounded-lg bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 flex-center transition">
+                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon1.svg" alt="tool" class="w-4 h-4 shrink-0">
+                                </button>
+                                <button class="xl:p-3 p-2 rounded-lg bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 flex-center transition ">
+                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon2.svg" alt="tool" class="w-4 h-4 shrink-0">
+                                </button>
+                                <button class="xl:p-3 p-2 rounded-lg bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 flex-center transition ">
+                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon3.svg" alt="tool" class="w-4 h-4 shrink-0">
+                                </button>
+                                <button class="xl:p-3 p-2 rounded-lg bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 flex-center transition">
+                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon4.svg" alt="tool" class="w-4 h-4 shrink-0">
+                                </button>
+                                <button class="xl:p-3 p-2 rounded-lg bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 flex-center transition">
+                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon5.svg" alt="tool" class="w-4 h-4 shrink-0">
+                                </button>
+                            </div>
+                            <button class="xl:p-3 p-2 rounded-lg flex-between gap-1 bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 transition">
+                            <img src="./assets/imgs/img-tools-icon/img-tools-icon6.svg" alt="3D" class="w-4 h-4  ">
+                            <span class="text-white text-[12px] font-inter">3D Mode</span>
+                            </button>
+                        </div>
+                        <img src="./assets/imgs/patient-profile/digitalImg/Section-CenterColumn_PrimaryViewer.webp" alt="Patient Radiology Image" class=" rounded-b-lg shrink shadow-md">
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 lg:col-span-1">
+                    <div class="form-section py-0">
+                        <div class="grid grid-cols-2 border-b border-[#BEC8CD]">
+                            <button class="section-title font-bold border-b-2 py-5 border-primary">Report</button>
+                            <button class="section-title font-bold py-5 hover:bg-primary/50 transition">AI Insights</button>
+                        </div>
+                        <div class="col gap-6">
+                            <div class="col gap-2">
+                            <p class="text-[14px] font-bold font-inter text-textMuted uppercase tracking-widest">Clinical Observations</p>
+                            <p class="text-[14px] font-inter text-textMuted/60 leading-relaxed">Patient presents with chronic discomfort in the lower left quadrant. CBCT imaging reveals significant apical lucency associated with tooth #36.</p>
+                            </div>
+                            <div class="col gap-2">
+                            <p class="text-[14px] font-bold font-inter text-textMuted uppercase tracking-widest">Findings Checklist</p>
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-2 p-4 bg-[#E5EEFF] border border-[#BEC8CD]/30 rounded-xl">
+                                <div class="w-5 h-5 bg-primary rounded-full flex-center">
+                                    <i class="ti ti-check text-white text-[14px]"></i>
+                                </div>
+                                <p class="text-[12px] font-inter font-semibold text-primary leading-tight">Vertical Root Fracture #36</p>
+                                </div>
+                                <div class="flex items-center gap-2 p-4 bg-[#E5EEFF] border border-[#BEC8CD]/30 rounded-xl">
+                                <i class="ti ti-alert-triangle-filled text-[#BA1A1A] text-[20px]"></i>
+                                <p class="text-[12px] font-inter font-semibold text-[#BA1A1A] leading-tight">Sinus Proximity Risk</p>
+                                </div>
+                                <div class="flex items-center gap-2 p-4 bg-[#E5EEFF] border border-[#BEC8CD]/30 rounded-xl">
+                                <div class="w-4 h-4 rounded-full border-2 border-[#6F787D] mt-0.5"></div>
+                                <p class="text-[12px] font-inter font-semibold text-[#6F787D] leading-tight">Impacted Third Molars</p>
+                                </div>
+                            </div>
                             </div>
                         </div>
-                        <div class="">
-                            <progress id="file" class="custom-progress" value="74.2" max="100"> 74.2% </progress>
+                        <div class="p-6 border-t border-[#BEC8CD]">
+                            <button class="w-full flex-center gap-2 bg-primary hover:bg-primary/60 transition text-white text-[16px] font-inter font-bold py-4 rounded-xl">
+                            <i class="ti ti-clipboard-check text-white text-[20px]"></i>
+                            Finalize Report
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div >
-                    <div class="form-section p-0 gap-0">
-                        <div class="flex-between p-4  bg-primary rounded-t-lg">
-                            <div class="flex items-center gap-4 ">
-                                <button class="p-3 rounded-lg bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 flex-center transition">
-                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon1.svg" alt="3D Icon" class="w-4 h-4">
-                                </button>
-                                <button class="p-3 rounded-lg bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 flex-center transition">
-                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon2.svg" alt="3D Icon" class="w-4 h-4">
-                                </button>
-                                <button class="p-3 rounded-lg bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 flex-center transition">
-                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon3.svg" alt="3D Icon" class="w-4 h-4">
-                                </button>
-                                <button class="p-3 rounded-lg bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 flex-center transition">
-                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon4.svg" alt="3D Icon" class="w-4 h-4">
-                                </button>
-                                <button class="p-3 rounded-lg bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10 flex-center transition">
-                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon5.svg" alt="3D Icon" class="w-4 h-4">
-                                </button>
-                                <button class="p-3 rounded-lg flex-between gap-1 bg-[#D3E4FE]/20 hover:bg-[#D3E4FE]/10  transition">
-                                    <img src="./assets/imgs/img-tools-icon/img-tools-icon6.svg" alt="3D Icon" class="w-4 h-4">
-                                    <span class="text-white   font-inter">3D   Mode</span>
-                                </button>
-                            </div>
-                        </div>
-                        <img src="./assets/imgs/patient-profile/digitalImg/Section-CenterColumn_PrimaryViewer.webp" alt="Patient Radiology Image" class="h-lvh rounded-b-lg shadow-md">
-                    </div>
-                </div>
-                <div></div>
+
             </div>
-        </main>
+    </main>
 
     
 </div>
