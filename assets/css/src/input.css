@@ -220,6 +220,22 @@ body{
     scrollbar-width: none;
     &::-webkit-scrollbar { display: none; }
 }
+.custom-progress {
+    width: 100%;
+    height: 8px;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.custom-progress::-webkit-progress-bar {
+    background-color: #E5E7EB;
+    border-radius: 9999px;
+}
+
+.custom-progress::-webkit-progress-value {
+    background-color: #16A34A;
+    border-radius: 9999px;
+}
 
 @utility patient-row {
     @apply grid grid-cols-[auto_1fr] md:grid-cols-[2fr_1.5fr_1.5fr_1.5fr_auto] gap-4 items-center px-6 py-4 border-b border-gray-100 hover:bg-bgPrimary transition;
@@ -352,3 +368,5 @@ body{
 @utility text-area-sp{
     @apply w-full border border-[#6F787D] rounded-xl p-4 text-sm text-textPrimary bg-[#F8F9FF] resize-none placeholder-[#6B7280];
 }
+
+

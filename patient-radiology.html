@@ -115,13 +115,74 @@
                             Refer Patient
                         </button>
                     </div>
-    </div>
+                    
+
+                </div>
+
             </div>
-           
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-[20%_40%_40%] gap-6">
+                <div class="col gap-6">
+                    <di class="form-section">
+                        <div class="col gap-4">
+                            <div class="flex-between">
+                            <p class="form-section-header">Imaging Orders</p>
+                            <img src="./assets/imgs/patientsPageIcon/filtericon.svg" alt="Alert Icon" class="w-4 h-4 inline-block ml-1">
 
-           
-
-
+                            </div>
+                            <div class="col gap-2 md:pb-20 ">
+                                <label class=" col gap-2 group  cursor-pointer" >
+                                <input type="radio" name="selectImage" class="peer sr-only" checked> 
+                                    <div class=" p-4 peer-checked:border-l-4 peer-checked:border-primary peer-checked:bg-[#EFF4FF] transition" >
+                                        <p class="font-inter font-bold text-textPrimary group-has-checked:text-primary text-xs ">CBCT · Full Mandible</p>
+                                        <p class="font-inter text-textMuted text-xs pt-1">Ref: Dr. Sarah Low</p>
+                                        <p class="font-inter text-textMuted text-xs pb-2">Oct 24, 2023 • 09:15 AM</p>
+                                        <span class="font-inter font-bold bg-[#DCFCE7] text-[#166534] text-[10px] px-2 py-0.5 rounded-xl hidden group-has-checked:block w-20">PROCESSED</span>
+                                    </div>
+                                </label>
+                                <label class=" col gap-2 group  cursor-pointer" >
+                                <input type="radio" name="selectImage" class="peer sr-only" >
+                                    <div class=" p-4 peer-checked:border-l-4 peer-checked:border-primary peer-checked:bg-[#EFF4FF] transition" >
+                                        <p class="font-inter font-bold text-textPrimary group-has-checked:text-primary text-xs ">Panoramic (OPG)</p>
+                                        <p class="font-inter text-textMuted text-xs pt-1">Ref: Internal</p>
+                                        <p class="font-inter text-textMuted text-xs pb-2">Sep 15, 2023</p>
+                                        <span class="font-inter font-bold bg-[#DCFCE7] text-[#166534] text-[10px] px-2 py-0.5 rounded-xl hidden group-has-checked:block w-20">PROCESSED</span>
+                                    </div>
+                                </label>
+                                <label class=" col gap-2 group  cursor-pointer" >
+                                <input type="radio" name="selectImage" class="peer sr-only" >
+                                    <div class=" p-4 peer-checked:border-l-4 peer-checked:border-primary peer-checked:bg-[#EFF4FF] transition" >
+                                        <p class="font-inter font-bold text-textPrimary group-has-checked:text-primary text-xs ">Periapical - Tooth #14</p>
+                                        <p class="font-inter text-textMuted text-xs pt-1">Ref: Internal</p>
+                                        <p class="font-inter text-textMuted text-xs pb-2">Aug 02, 2023</p>
+                                        <span class="font-inter font-bold bg-[#DCFCE7] text-[#166534] text-[10px] px-2 py-0.5 rounded-xl hidden group-has-checked:block w-20">PROCESSED</span>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                        </div>
+                    </di>
+                    <div class="form-section">
+                        <p class="form-section-header">Diagnostic Integrity</p>
+                        <div class="flex-between">
+                            <span class="font-inter text-textMuted text-xs">Bone Density Index</span>
+                            <div class="col">
+                                <span class="font-inter font-bold text-[#16A34A] text-xs ">High</span>
+                                <span class="font-inter font-bold text-[#16A34A] text-xs items-right">(74.2)</span>
+                            </div>
+                        </div>
+                        <div class="">
+                            <progress id="file" class="custom-progress" value="74.2" max="100"> 74.2% </progress>
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <div class="form-section p-0 gap-0">
+                        <img src="./assets/imgs/patient-profile/digitalImg/ViewerControls.webp" alt="Patient Radiology Header" class="   rounded-lg shadow-md">
+                        <img src="./assets/imgs/patient-profile/digitalImg/Section-CenterColumn_PrimaryViewer.webp" alt="Patient Radiology Image" class="h-lvh rounded-lg shadow-md">
+                    </div>
+                </div>
+                <div></div>
+            </div>
         </main>
 
     
